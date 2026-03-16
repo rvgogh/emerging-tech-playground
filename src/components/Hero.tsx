@@ -1,48 +1,52 @@
 import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
+import heroPhoto from "@/assets/hero-photo.jpg";
 
 const Hero = () => {
   return (
     <section
       id="over"
-      className="relative min-h-[90vh] flex items-center justify-center overflow-hidden"
-      style={{
-        background:
-          "linear-gradient(135deg, hsl(160 60% 45%) 0%, hsl(127 40% 54%) 50%, hsl(100 50% 50%) 100%)",
-      }}
+      className="relative min-h-[80vh] flex items-center justify-center overflow-hidden"
     >
-      {/* Decorative circles */}
-      <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-white/10 blur-3xl" />
-      <div className="absolute -bottom-32 -left-32 w-[500px] h-[500px] rounded-full bg-white/5 blur-3xl" />
+      {/* Background image with overlay */}
+      <div className="absolute inset-0">
+        <img
+          src={heroPhoto}
+          alt="Studenten werken samen"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-foreground/80 via-foreground/60 to-foreground/40" />
+      </div>
 
-      <div className="container mx-auto px-4 py-20 text-center relative z-10">
-        <span className="inline-block mb-4 px-4 py-1.5 rounded-full bg-white/20 text-white/90 text-sm font-medium tracking-wide backdrop-blur-sm">
-          HBO Minor — Semester 2
-        </span>
-        <h1 className="font-heading text-4xl sm:text-5xl lg:text-7xl font-extrabold text-white leading-tight max-w-4xl mx-auto">
-          Combineer Tech, Engineering, Design & Business
-        </h1>
-        <p className="mt-6 text-lg sm:text-xl text-white/85 max-w-2xl mx-auto leading-relaxed">
-          In één semester werk je met echte opdrachtgevers aan innovatieve
-          projecten. Geen tentamens, wel hands-on ervaring met emerging
-          technologies.
-        </p>
-        <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-          <Button
-            size="lg"
-            className="bg-white text-primary hover:bg-white/90 font-semibold text-base px-8"
-            asChild
-          >
-            <a href="#contact">Schrijf je in</a>
-          </Button>
-          <Button
-            size="lg"
-            variant="outline"
-            className="border-white/40 text-white hover:bg-white/10 font-semibold text-base px-8"
-            asChild
-          >
-            <a href="#disciplines">Ontdek de disciplines</a>
-          </Button>
+      <div className="container mx-auto px-4 py-20 relative z-10">
+        <div className="max-w-3xl">
+          <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight">
+            Combineer{" "}
+            <span className="text-primary">Tech</span>, Engineering,{" "}
+            <span className="text-primary">Design</span> &amp; Business.
+          </h1>
+          <p className="mt-6 text-lg sm:text-xl text-white/80 max-w-2xl leading-relaxed">
+            Vergeet de standaard minor-vakjes. In deze minor stap je uit je eigen
+            wereld. Je wordt niet alleen beter in je vak, maar ontdekt vooral hoe
+            jouw skills passen bij die van tech, design en business.
+          </p>
+          <div className="mt-10 flex flex-col sm:flex-row gap-4">
+            <Button
+              size="lg"
+              className="font-semibold text-base px-8"
+              asChild
+            >
+              <a href="#contact">Meer weten?</a>
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-white/40 text-white hover:bg-white/10 font-semibold text-base px-8"
+              asChild
+            >
+              <a href="#disciplines">Ontdek de disciplines</a>
+            </Button>
+          </div>
         </div>
       </div>
 
