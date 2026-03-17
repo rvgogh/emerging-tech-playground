@@ -43,7 +43,7 @@ const Hero = () => {
               className="border-2 border-white/40 bg-transparent text-white hover:bg-white/10 font-semibold text-base px-8"
               asChild
             >
-              <a href="#disciplines">Ontdek de disciplines</a>
+              <a href="#interessegebieden">Ontdek de interessegebieden</a>
             </Button>
           </div>
         </div>
@@ -51,7 +51,7 @@ const Hero = () => {
 
       {/* Scroll indicator */}
       <a
-        href="#disciplines"
+        href="#interessegebieden"
         className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/60 animate-bounce"
         aria-label="Scroll naar beneden"
       >

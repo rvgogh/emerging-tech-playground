@@ -16,7 +16,7 @@ const Footer = () => {
           <div className="flex gap-6 text-sm">
             {[
               { label: "Over", href: "#over" },
-              { label: "Disciplines", href: "#disciplines" },
+              { label: "Interessegebieden", href: "#interessegebieden" },
               { label: "Ervaringen", href: "#ervaringen" },
               { label: "Contact", href: "#contact" },
             ].map((l) => (

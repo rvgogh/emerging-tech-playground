@@ -36,11 +36,11 @@ const pillars = [
 
 const Pillars = () => {
   return (
-    <section id="disciplines" className="py-20 lg:py-28 bg-background">
+    <section id="interessegebieden" className="py-20 lg:py-28 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-2xl mx-auto mb-14">
           <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-primary">
-            De Vier Pijlers
+            De Vier Interessegebieden
           </h2>
           <p className="mt-4 text-muted-foreground text-lg">
             In deze minor leer je samenwerken op het snijvlak van vier werelden
