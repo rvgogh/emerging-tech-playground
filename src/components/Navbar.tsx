@@ -5,7 +5,7 @@ import logo from "@/assets/ETP_logo_transparant.png";
 
 const navLinks = [
   { label: "Over", href: "#over" },
-  { label: "Disciplines", href: "#disciplines" },
+  { label: "Interessegebieden", href: "#interessegebieden" },
   { label: "Ervaringen", href: "#ervaringen" },
   { label: "Contact", href: "#contact" },
 ];

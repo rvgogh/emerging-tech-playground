@@ -51,7 +51,7 @@ const Hero = () => {
 
       {/* Scroll indicator */}
       <a
-        href="#disciplines"
+        href="#interessegebieden"
         className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/60 animate-bounce"
         aria-label="Scroll naar beneden"
       >
