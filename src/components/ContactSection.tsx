@@ -4,7 +4,6 @@ import { z } from "zod";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import {
   Form,
   FormControl,
@@ -16,11 +15,6 @@ import {
 import { useToast } from "@/hooks/use-toast";
 
 const contactSchema = z.object({
-  naam: z
-    .string()
-    .trim()
-    .min(1, "Naam is verplicht")
-    .max(100, "Max 100 tekens"),
   email: z
     .string()
     .trim()
@@ -29,11 +23,9 @@ const contactSchema = z.object({
   vraag: z
     .string()
     .trim()
-    .min(1, "Stel een vraag")
-    .max(1000, "Max 1000 tekens"),
-  type: z.enum(["student", "bedrijf", "anders"], {
-    required_error: "Maak een keuze",
-  }),
+    .max(1000, "Max 1000 tekens")
+    .optional()
+    .default(""),
 });
 
 type ContactForm = z.infer<typeof contactSchema>;
@@ -42,11 +34,10 @@ const ContactSection = () => {
   const { toast } = useToast();
   const form = useForm<ContactForm>({
     resolver: zodResolver(contactSchema),
-    defaultValues: { naam: "", email: "", vraag: "", type: undefined },
+    defaultValues: { email: "", vraag: "" },
   });
 
   const onSubmit = async (data: ContactForm) => {
-    // Placeholder — will POST to Supabase Edge Function later
     console.log("Contact form submitted:", data);
     toast({
       title: "Bedankt!",
@@ -102,28 +93,10 @@ const ContactSection = () => {
               >
                 <FormField
                   control={form.control}
-                  name="naam"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel className="text-white/80">Naam</FormLabel>
-                      <FormControl>
-                        <Input
-                          placeholder="Je volledige naam"
-                          className="bg-white/10 border-white/20 text-white placeholder:text-white/40"
-                          {...field}
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-
-                <FormField
-                  control={form.control}
                   name="email"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-white/80">E-mail</FormLabel>
+                      <FormLabel className="text-white/80">E-mail *</FormLabel>
                       <FormControl>
                         <Input
                           type="email"
@@ -139,42 +112,10 @@ const ContactSection = () => {
 
                 <FormField
                   control={form.control}
-                  name="type"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel className="text-white/80">Ik ben een…</FormLabel>
-                      <FormControl>
-                        <RadioGroup
-                          onValueChange={field.onChange}
-                          value={field.value}
-                          className="flex flex-wrap gap-4"
-                        >
-                          {[
-                            { value: "student", label: "Student" },
-                            { value: "bedrijf", label: "Bedrijf" },
-                            { value: "anders", label: "Anders" },
-                          ].map((opt) => (
-                            <label
-                              key={opt.value}
-                              className="flex items-center gap-2 cursor-pointer text-white/70"
-                            >
-                              <RadioGroupItem value={opt.value} />
-                              {opt.label}
-                            </label>
-                          ))}
-                        </RadioGroup>
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-
-                <FormField
-                  control={form.control}
                   name="vraag"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-white/80">Je vraag</FormLabel>
+                      <FormLabel className="text-white/80">Je vraag (optioneel)</FormLabel>
                       <FormControl>
                         <Textarea
                           placeholder="Waar ben je benieuwd naar?"
