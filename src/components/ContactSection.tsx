@@ -16,11 +16,6 @@ import {
 import { useToast } from "@/hooks/use-toast";
 
 const contactSchema = z.object({
-  naam: z
-    .string()
-    .trim()
-    .min(1, "Naam is verplicht")
-    .max(100, "Max 100 tekens"),
   email: z
     .string()
     .trim()
@@ -29,11 +24,9 @@ const contactSchema = z.object({
   vraag: z
     .string()
     .trim()
-    .min(1, "Stel een vraag")
-    .max(1000, "Max 1000 tekens"),
-  type: z.enum(["student", "bedrijf", "anders"], {
-    required_error: "Maak een keuze",
-  }),
+    .max(1000, "Max 1000 tekens")
+    .optional()
+    .default(""),
 });
 
 type ContactForm = z.infer<typeof contactSchema>;
@@ -42,7 +35,7 @@ const ContactSection = () => {
   const { toast } = useToast();
   const form = useForm<ContactForm>({
     resolver: zodResolver(contactSchema),
-    defaultValues: { naam: "", email: "", vraag: "", type: undefined },
+    defaultValues: { email: "", vraag: "" },
   });
 
   const onSubmit = async (data: ContactForm) => {
