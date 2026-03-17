@@ -43,7 +43,7 @@ const Hero = () => {
               className="border-2 border-white/40 bg-transparent text-white hover:bg-white/10 font-semibold text-base px-8"
               asChild
             >
-              <a href="#disciplines">Ontdek de disciplines</a>
+              <a href="#interessegebieden">Ontdek de interessegebieden</a>
             </Button>
           </div>
         </div>
