@@ -9,28 +9,24 @@ const pillars = [
     title: "Tech",
     description:
       "Codeer je ideeën en bouw werkende prototypes. Van front-end tot complexe algoritmen.",
-    link: "Lees meer over tech",
   },
   {
     image: pillarDesign,
     title: "Design",
     description:
       "Vorm de ultieme gebruikerservaring. Leer design thinking, prototyping en visual design.",
-    link: "Lees meer over design",
   },
   {
     image: pillarEngineering,
     title: "Engineering",
     description:
       "Breng je ontwerpen tot leven. Werk met hardware, elektronica en robotica.",
-    link: "Lees meer over engineering",
   },
   {
     image: pillarBusiness,
     title: "Business",
     description:
       "Maak je concepten winstgevend. Ontwikkel business modellen en pitch je startup.",
-    link: "Lees meer over business",
   },
 ];
 
@@ -64,12 +60,6 @@ const Pillars = () => {
               <p className="text-muted-foreground leading-relaxed text-sm mb-2">
                 {p.description}
               </p>
-              <a
-                href="#contact"
-                className="text-primary text-sm font-medium underline underline-offset-4 hover:text-primary/80 transition-colors"
-              >
-                {p.link}
-              </a>
             </div>
           ))}
         </div>
