@@ -1,5 +1,10 @@
-import { Instagram, Linkedin, Mail } from "lucide-react";
+import { Linkedin, Mail } from "lucide-react";
 import logo from "@/assets/ETP_logo_transparant.png";
+
+const obfuscatedEmail = () => {
+  const parts = ["rwa.vangogh", "avans.nl"];
+  return parts.join("@");
+};
 
 const Footer = () => {
   return (
@@ -15,8 +20,9 @@ const Footer = () => {
 
           <div className="flex gap-6 text-sm">
             {[
-              { label: "Over", href: "#over" },
               { label: "Interessegebieden", href: "#interessegebieden" },
+              { label: "Waarom deze minor?", href: "#waarom" },
+              { label: "Praktisch", href: "#praktisch" },
               { label: "Ervaringen", href: "#ervaringen" },
               { label: "Contact", href: "#contact" },
             ].map((l) => (
@@ -31,13 +37,24 @@ const Footer = () => {
           </div>
 
           <div className="flex gap-4">
-            <a href="#" className="hover:text-white transition-colors" aria-label="Instagram">
-              <Instagram size={20} />
-            </a>
-            <a href="#" className="hover:text-white transition-colors" aria-label="LinkedIn">
+            <a
+              href="https://www.linkedin.com/company/avans-minor-etp/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white transition-colors"
+              aria-label="LinkedIn"
+            >
               <Linkedin size={20} />
             </a>
-            <a href="mailto:info@etp.nl" className="hover:text-white transition-colors" aria-label="Email">
+            <a
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                window.location.href = `mailto:${obfuscatedEmail()}`;
+              }}
+              className="hover:text-white transition-colors"
+              aria-label="Email"
+            >
               <Mail size={20} />
             </a>
           </div>
