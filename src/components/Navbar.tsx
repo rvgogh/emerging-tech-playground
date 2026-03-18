@@ -4,10 +4,10 @@ import { Button } from "@/components/ui/button";
 import logo from "@/assets/ETP_logo_transparant.png";
 
 const navLinks = [
-  { label: "Over", href: "#over" },
   { label: "Interessegebieden", href: "#interessegebieden" },
+  { label: "Waarom deze minor?", href: "#waarom" },
+  { label: "Praktisch", href: "#praktisch" },
   { label: "Ervaringen", href: "#ervaringen" },
-  { label: "Contact", href: "#contact" },
 ];
 
 const Navbar = () => {
