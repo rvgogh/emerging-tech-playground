@@ -29,7 +29,7 @@ const advantages = [
 
 const WhyThisMinor = () => {
   return (
-    <section className="py-20 lg:py-28 bg-secondary relative overflow-hidden">
+    <section id="waarom" className="py-20 lg:py-28 bg-secondary relative overflow-hidden">
       {/* Decorative blob */}
       <div
         className="absolute -top-40 -right-40 w-[500px] h-[500px] rounded-full opacity-20"
