@@ -60,12 +60,6 @@ const Pillars = () => {
               <p className="text-muted-foreground leading-relaxed text-sm mb-2">
                 {p.description}
               </p>
-              <a
-                href="#contact"
-                className="text-primary text-sm font-medium underline underline-offset-4 hover:text-primary/80 transition-colors"
-              >
-                {p.link}
-              </a>
             </div>
           ))}
         </div>
