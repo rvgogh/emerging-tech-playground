@@ -70,18 +70,6 @@ const ContactSection = () => {
               overtuigd? Vul het formulier in en we nemen zo snel mogelijk
               contact met je op.
             </p>
-            <div className="mt-8 space-y-4">
-              {[
-                "Geen voorkennis vereist",
-                "Open voor alle HBO-studenten",
-                "Start in februari & september",
-              ].map((item) => (
-                <div key={item} className="flex items-center gap-3">
-                  <div className="w-2 h-2 rounded-full bg-primary" />
-                  <span className="text-white/80">{item}</span>
-                </div>
-              ))}
-            </div>
           </div>
 
           {/* Right — form */}
