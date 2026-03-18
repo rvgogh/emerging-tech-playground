@@ -23,7 +23,7 @@ const advantages = [
     icon: Rocket,
     title: "Kickstart Carrière",
     description:
-      "Bouw een portfolio met innovatieve projecten dat je direct kunt laten zien aan werkgevers.",
+      "Na de minor stromen studenten door naar (afstudeer)stages bij onze opdrachtgevers — met een portfolio vol echte projecten.",
   },
 ];
 
