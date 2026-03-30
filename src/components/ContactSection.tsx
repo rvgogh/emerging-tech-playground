@@ -13,25 +13,30 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { useToast } from "@/hooks/use-toast";
+import { useLanguage } from "@/i18n/LanguageContext";
+import { translations } from "@/i18n/translations";
 
-const contactSchema = z.object({
-  email: z
-    .string()
-    .trim()
-    .email("Ongeldig e-mailadres")
-    .max(255, "Max 255 tekens"),
-  vraag: z
-    .string()
-    .trim()
-    .max(1000, "Max 1000 tekens")
-    .optional()
-    .default(""),
-});
-
-type ContactForm = z.infer<typeof contactSchema>;
+type ContactForm = { email: string; vraag: string };
 
 const ContactSection = () => {
   const { toast } = useToast();
+  const { t, lang } = useLanguage();
+  const c = translations.contact;
+
+  const contactSchema = z.object({
+    email: z
+      .string()
+      .trim()
+      .email(t(c.emailError))
+      .max(255, t(c.maxError)),
+    vraag: z
+      .string()
+      .trim()
+      .max(1000, t(c.maxQuestionError))
+      .optional()
+      .default(""),
+  });
+
   const form = useForm<ContactForm>({
     resolver: zodResolver(contactSchema),
     defaultValues: { email: "", vraag: "" },
@@ -40,8 +45,8 @@ const ContactSection = () => {
   const onSubmit = async (data: ContactForm) => {
     console.log("Contact form submitted:", data);
     toast({
-      title: "Bedankt!",
-      description: "We nemen zo snel mogelijk contact met je op.",
+      title: t(c.successTitle),
+      description: t(c.successDescription),
     });
     form.reset();
   };
@@ -57,22 +62,18 @@ const ContactSection = () => {
     >
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl mx-auto items-start">
-          {/* Left — motivation */}
           <div>
             <span className="text-primary font-semibold text-sm uppercase tracking-widest">
-              Contact
+              {t(c.label)}
             </span>
             <h2 className="font-heading text-3xl sm:text-4xl font-bold mt-3 text-white">
-              Klaar om de stap te zetten?
+              {t(c.heading)}
             </h2>
             <p className="mt-4 text-white/70 leading-relaxed text-lg">
-              Heb je vragen over de minor, wil je meer informatie of ben je al
-              overtuigd? Vul het formulier in en we nemen zo snel mogelijk
-              contact met je op.
+              {t(c.description)}
             </p>
           </div>
 
-          {/* Right — form */}
           <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
             <Form {...form}>
               <form
@@ -84,11 +85,11 @@ const ContactSection = () => {
                   name="email"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-white/80">E-mail *</FormLabel>
+                      <FormLabel className="text-white/80">{t(c.emailLabel)}</FormLabel>
                       <FormControl>
                         <Input
                           type="email"
-                          placeholder="je@email.com"
+                          placeholder={t(c.emailPlaceholder)}
                           className="bg-white/10 border-white/20 text-white placeholder:text-white/40"
                           {...field}
                         />
@@ -103,10 +104,10 @@ const ContactSection = () => {
                   name="vraag"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-white/80">Je vraag (optioneel)</FormLabel>
+                      <FormLabel className="text-white/80">{t(c.questionLabel)}</FormLabel>
                       <FormControl>
                         <Textarea
-                          placeholder="Waar ben je benieuwd naar?"
+                          placeholder={t(c.questionPlaceholder)}
                           rows={4}
                           className="bg-white/10 border-white/20 text-white placeholder:text-white/40 resize-none"
                           {...field}
@@ -118,7 +119,7 @@ const ContactSection = () => {
                 />
 
                 <Button type="submit" size="lg" className="w-full font-semibold">
-                  Verstuur
+                  {t(c.submit)}
                 </Button>
               </form>
             </Form>
