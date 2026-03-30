@@ -6,9 +6,9 @@ import pillarBusiness from "@/assets/pillar-business.jpg";
 const pillars = [
   {
     image: pillarTech,
-    title: "Tech",
+    title: "ICT",
     description:
-      "Codeer je ideeën en bouw werkende prototypes. Van front-end tot complexe algoritmen.",
+      "Zet AI in om data-gedreven apps te bouwen met conversational interfaces. Leer ook de basis van cybersecurity.",
   },
   {
     image: pillarDesign,
