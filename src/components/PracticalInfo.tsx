@@ -27,6 +27,12 @@ const items = [
     label: "Toelating",
     value: "3e jaars studenten techniek, design of innovatie",
   },
+  {
+    icon: Globe,
+    label: "Internationaal",
+    value: "Engels als voertaal, internationaal gezelschap",
+    sub: "Erasmus-studenten welkom · Toetsing voor NL-studenten in het Nederlands",
+  },
 ];
 
 const PracticalInfo = () => {
