@@ -22,7 +22,7 @@ const Hero = () => {
         <div className="max-w-3xl">
           <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight">
             Combineer{" "}
-            <span className="text-primary">Tech</span>, Engineering,{" "}
+            <span className="text-primary">ICT</span>, Engineering,{" "}
             <span className="text-primary">Design</span> &amp; Business.
           </h1>
           <p className="mt-6 text-lg sm:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
