@@ -1,4 +1,6 @@
 import { Linkedin, Mail } from "lucide-react";
+import { useLanguage } from "@/i18n/LanguageContext";
+import { translations } from "@/i18n/translations";
 import logo from "@/assets/ETP_logo_transparant.png";
 
 const obfuscatedEmail = () => {
@@ -7,6 +9,18 @@ const obfuscatedEmail = () => {
 };
 
 const Footer = () => {
+  const { t } = useLanguage();
+  const nav = translations.nav;
+  const f = translations.footer;
+
+  const footerLinks = [
+    { label: t(nav.interests), href: "#interessegebieden" },
+    { label: t(nav.why), href: "#waarom" },
+    { label: t(nav.practical), href: "#praktisch" },
+    { label: t(nav.experiences), href: "#ervaringen" },
+    { label: t(nav.contact), href: "#contact" },
+  ];
+
   return (
     <footer className="bg-foreground text-white/70 py-12">
       <div className="container mx-auto px-4">
@@ -19,13 +33,7 @@ const Footer = () => {
           </div>
 
           <div className="flex gap-6 text-sm">
-            {[
-              { label: "Interessegebieden", href: "#interessegebieden" },
-              { label: "Waarom deze minor?", href: "#waarom" },
-              { label: "Praktisch", href: "#praktisch" },
-              { label: "Ervaringen", href: "#ervaringen" },
-              { label: "Contact", href: "#contact" },
-            ].map((l) => (
+            {footerLinks.map((l) => (
               <a
                 key={l.href}
                 href={l.href}
@@ -61,7 +69,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-8 pt-8 border-t border-white/10 text-center text-xs text-white/40">
-          © {new Date().getFullYear()} Emerging Technologies Playground. Alle rechten voorbehouden.
+          © {new Date().getFullYear()} Emerging Technologies Playground. {t(f.rights)}
         </div>
       </div>
     </footer>

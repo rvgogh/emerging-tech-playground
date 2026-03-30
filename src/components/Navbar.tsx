@@ -1,17 +1,21 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import LanguageSelector from "@/components/LanguageSelector";
+import { useLanguage } from "@/i18n/LanguageContext";
+import { translations } from "@/i18n/translations";
 import logo from "@/assets/ETP_logo_transparant.png";
-
-const navLinks = [
-  { label: "Interessegebieden", href: "#interessegebieden" },
-  { label: "Waarom deze minor?", href: "#waarom" },
-  { label: "Praktisch", href: "#praktisch" },
-  { label: "Ervaringen", href: "#ervaringen" },
-];
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const { t } = useLanguage();
+
+  const navLinks = [
+    { label: t(translations.nav.interests), href: "#interessegebieden" },
+    { label: t(translations.nav.why), href: "#waarom" },
+    { label: t(translations.nav.practical), href: "#praktisch" },
+    { label: t(translations.nav.experiences), href: "#ervaringen" },
+  ];
 
   return (
     <nav className="sticky top-0 z-50 bg-background/90 backdrop-blur-md border-b">
@@ -31,19 +35,23 @@ const Navbar = () => {
               {l.label}
             </a>
           ))}
+          <LanguageSelector />
           <Button asChild>
-            <a href="#contact">Meer weten?</a>
+            <a href="#contact">{t(translations.nav.cta)}</a>
           </Button>
         </div>
 
         {/* Mobile toggle */}
-        <button
-          className="md:hidden p-2 text-foreground"
-          onClick={() => setOpen(!open)}
-          aria-label="Menu"
-        >
-          {open ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        <div className="md:hidden flex items-center gap-2">
+          <LanguageSelector />
+          <button
+            className="p-2 text-foreground"
+            onClick={() => setOpen(!open)}
+            aria-label="Menu"
+          >
+            {open ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile menu */}
@@ -61,7 +69,7 @@ const Navbar = () => {
           ))}
           <Button className="w-full" asChild>
             <a href="#contact" onClick={() => setOpen(false)}>
-              Meer weten?
+              {t(translations.nav.cta)}
             </a>
           </Button>
         </div>
