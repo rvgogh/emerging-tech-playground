@@ -1,4 +1,4 @@
-import { GraduationCap, CalendarDays, Clock, MapPin, UserCheck } from "lucide-react";
+import { GraduationCap, CalendarDays, Clock, MapPin, UserCheck, Globe } from "lucide-react";
 
 const items = [
   {
@@ -25,7 +25,13 @@ const items = [
   {
     icon: UserCheck,
     label: "Toelating",
-    value: "3e jaars studenten met een opleiding in het domein techniek, design of innovatie",
+    value: "3e jaars studenten techniek, design of innovatie",
+  },
+  {
+    icon: Globe,
+    label: "Internationaal",
+    value: "Engels als voertaal, internationaal gezelschap",
+    sub: "Erasmus-studenten welkom · Toetsing voor NL-studenten in het Nederlands",
   },
 ];
 

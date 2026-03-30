@@ -17,7 +17,7 @@ const advantages = [
     icon: Layers,
     title: "Multidisciplinair",
     description:
-      "Combineer vaardigheden uit Tech, Design, Engineering en Business in één team.",
+      "Combineer vaardigheden uit ICT, Design, Engineering en Business in één team.",
   },
   {
     icon: Rocket,
