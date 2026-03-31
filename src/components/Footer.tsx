@@ -36,15 +36,25 @@ const Footer = () => {
           </div>
 
           <div className="flex gap-6 text-sm">
-            {footerLinks.map((l) => (
-              <a
-                key={l.href}
-                href={l.href}
-                className="hover:text-white transition-colors"
-              >
-                {l.label}
-              </a>
-            ))}
+            {footerLinks.map((l) =>
+              (l as any).isRoute ? (
+                <Link
+                  key={l.href}
+                  to={l.href}
+                  className="hover:text-white transition-colors"
+                >
+                  {l.label}
+                </Link>
+              ) : (
+                <a
+                  key={l.href}
+                  href={l.href}
+                  className="hover:text-white transition-colors"
+                >
+                  {l.label}
+                </a>
+              )
+            )}
           </div>
 
           <div className="flex gap-4">
