@@ -2,6 +2,7 @@ import { Linkedin, Mail } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { translations } from "@/i18n/translations";
 import logo from "@/assets/ETP_logo_transparant.png";
+import PrivacyModal from "@/components/PrivacyModal";
 
 const obfuscatedEmail = () => {
   const parts = ["rwa.vangogh", "avans.nl"];
