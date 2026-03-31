@@ -6,7 +6,7 @@ import pillarBusiness from "@/assets/pillar-business.jpg";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { translations } from "@/i18n/translations";
 
-const images = [pillarTech, pillarDesign, pillarEngineering, pillarBusiness];
+const fieldNames = ["ICT", "Design", "Engineering", "Business"];
 
 const Pillars = () => {
   const { t } = useLanguage();
