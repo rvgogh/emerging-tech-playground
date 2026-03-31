@@ -6,6 +6,7 @@ import PracticalInfo from "@/components/PracticalInfo";
 import Testimonials from "@/components/Testimonials";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import CookieConsent from "@/components/CookieConsent";
 
 const Index = () => {
   return (
@@ -20,6 +21,7 @@ const Index = () => {
         <ContactSection />
       </main>
       <Footer />
+      <CookieConsent />
     </div>
   );
 };
