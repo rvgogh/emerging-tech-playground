@@ -69,16 +69,27 @@ const Navbar = () => {
       {/* Mobile menu */}
       {open && (
         <div className="md:hidden border-t bg-background px-4 pb-4 space-y-3">
-          {navLinks.map((l) => (
-            <a
-              key={l.href}
-              href={l.href}
-              onClick={() => setOpen(false)}
-              className="block py-2 text-sm font-medium text-foreground/70 hover:text-primary transition-colors"
-            >
-              {l.label}
-            </a>
-          ))}
+          {navLinks.map((l) =>
+            (l as any).isRoute ? (
+              <Link
+                key={l.href}
+                to={l.href}
+                onClick={() => setOpen(false)}
+                className="block py-2 text-sm font-medium text-foreground/70 hover:text-primary transition-colors"
+              >
+                {l.label}
+              </Link>
+            ) : (
+              <a
+                key={l.href}
+                href={l.href}
+                onClick={() => setOpen(false)}
+                className="block py-2 text-sm font-medium text-foreground/70 hover:text-primary transition-colors"
+              >
+                {l.label}
+              </a>
+            )
+          )}
           <Button className="w-full" asChild>
             <a href="#contact" onClick={() => setOpen(false)}>
               {t(translations.nav.cta)}
