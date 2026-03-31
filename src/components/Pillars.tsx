@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import pillarTech from "@/assets/pillar-tech.jpg";
 import pillarDesign from "@/assets/pillar-design.jpg";
 import pillarEngineering from "@/assets/pillar-engineering.jpg";
