@@ -45,7 +45,6 @@ const Pillars = () => {
               </p>
             </Link>
           ))}
-          ))}
         </div>
       </div>
     </section>
