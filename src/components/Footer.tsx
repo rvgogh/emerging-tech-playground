@@ -17,6 +17,7 @@ const Footer = () => {
 
   const footerLinks = [
     { label: t(nav.interests), href: "#interessegebieden" },
+    { label: t(translations.nav2.projects), href: "/projecten", isRoute: true },
     { label: t(nav.why), href: "#waarom" },
     { label: t(nav.practical), href: "#praktisch" },
     { label: t(nav.experiences), href: "#ervaringen" },
