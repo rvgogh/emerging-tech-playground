@@ -10,7 +10,7 @@ const obfuscatedEmail = () => {
 };
 
 const Footer = () => {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
   const nav = translations.nav;
   const f = translations.footer;
 
