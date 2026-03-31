@@ -40,9 +40,15 @@ const PracticalInfo = () => {
                   {t(item.value)}
                 </span>
                 {sub && (
-                  <span className="text-muted-foreground text-xs mt-1">
-                    {t(sub)}
-                  </span>
+                  i === 3 ? (
+                    <Link to="/projecten" className="text-primary text-xs mt-1 hover:underline">
+                      {t(sub)}
+                    </Link>
+                  ) : (
+                    <span className="text-muted-foreground text-xs mt-1">
+                      {t(sub)}
+                    </span>
+                  )
                 )}
               </div>
             );
