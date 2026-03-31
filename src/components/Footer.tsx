@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Linkedin, Mail } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { translations } from "@/i18n/translations";
@@ -16,6 +17,7 @@ const Footer = () => {
 
   const footerLinks = [
     { label: t(nav.interests), href: "#interessegebieden" },
+    { label: t(translations.nav2.projects), href: "/projecten", isRoute: true },
     { label: t(nav.why), href: "#waarom" },
     { label: t(nav.practical), href: "#praktisch" },
     { label: t(nav.experiences), href: "#ervaringen" },
@@ -34,15 +36,25 @@ const Footer = () => {
           </div>
 
           <div className="flex gap-6 text-sm">
-            {footerLinks.map((l) => (
-              <a
-                key={l.href}
-                href={l.href}
-                className="hover:text-white transition-colors"
-              >
-                {l.label}
-              </a>
-            ))}
+            {footerLinks.map((l) =>
+              (l as any).isRoute ? (
+                <Link
+                  key={l.href}
+                  to={l.href}
+                  className="hover:text-white transition-colors"
+                >
+                  {l.label}
+                </Link>
+              ) : (
+                <a
+                  key={l.href}
+                  href={l.href}
+                  className="hover:text-white transition-colors"
+                >
+                  {l.label}
+                </a>
+              )
+            )}
           </div>
 
           <div className="flex gap-4">

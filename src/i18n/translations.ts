@@ -179,6 +179,24 @@ export const translations = {
     maxError: { nl: "Max 255 tekens", en: "Max 255 characters" },
     maxQuestionError: { nl: "Max 1000 tekens", en: "Max 1000 characters" },
   },
+  projects: {
+    heading: { nl: "Projecten Portfolio", en: "Project Portfolio" },
+    sub: {
+      nl: "Ontdek de projecten die studenten hebben uitgevoerd bij echte opdrachtgevers.",
+      en: "Discover the projects students have completed for real clients.",
+    },
+    back: { nl: "Terug naar home", en: "Back to home" },
+    all: { nl: "Alles", en: "All" },
+    readMore: { nl: "Lees meer", en: "Read more" },
+    problemLabel: { nl: "Probleem", en: "Problem" },
+    goalsLabel: { nl: "Doelen", en: "Goals" },
+    resultsLabel: { nl: "Resultaten", en: "Results" },
+    conclusionLabel: { nl: "Conclusie", en: "Conclusion" },
+    noResults: { nl: "Geen projecten gevonden voor dit interessegebied.", en: "No projects found for this focus area." },
+  },
+  nav2: {
+    projects: { nl: "Projecten", en: "Projects" },
+  },
   footer: {
     rights: {
       nl: "Alle rechten voorbehouden.",
