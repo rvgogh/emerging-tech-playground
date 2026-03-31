@@ -69,8 +69,13 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-8 pt-8 border-t border-white/10 text-center text-xs text-white/40">
-          © {new Date().getFullYear()} Emerging Technologies Playground. {t(f.rights)}
+        <div className="mt-8 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-white/40">
+          <span>© {new Date().getFullYear()} Emerging Technologies Playground. {t(f.rights)}</span>
+          <PrivacyModal>
+            <button className="hover:text-white transition-colors underline">
+              {lang === "nl" ? "Privacyverklaring" : "Privacy Statement"}
+            </button>
+          </PrivacyModal>
         </div>
       </div>
     </footer>
