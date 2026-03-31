@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Linkedin, Mail } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { translations } from "@/i18n/translations";
