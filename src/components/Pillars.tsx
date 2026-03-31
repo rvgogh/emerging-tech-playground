@@ -24,22 +24,27 @@ const Pillars = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {p.items.map((item, i) => (
-            <div key={i} className="group">
+            <Link
+              key={i}
+              to={`/projecten?field=${fieldNames[i]}`}
+              className="group block"
+            >
               <div className="overflow-hidden rounded-xl mb-4">
                 <img
-                  src={images[i]}
+                  src={[pillarTech, pillarDesign, pillarEngineering, pillarBusiness][i]}
                   alt={t(item.title)}
                   className="w-full h-48 sm:h-56 object-cover group-hover:scale-105 transition-transform duration-500"
                   loading="lazy"
                 />
               </div>
-              <h3 className="font-heading text-xl font-bold text-foreground mb-2">
+              <h3 className="font-heading text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
                 {t(item.title)}
               </h3>
               <p className="text-muted-foreground leading-relaxed text-sm mb-2">
                 {t(item.description)}
               </p>
-            </div>
+            </Link>
+          ))}
           ))}
         </div>
       </div>
