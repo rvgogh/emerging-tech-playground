@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import LanguageSelector from "@/components/LanguageSelector";
+import ThemeToggle from "@/components/ThemeToggle";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { translations } from "@/i18n/translations";
 import logo from "@/assets/ETP_logo_transparant.png";
@@ -48,6 +49,7 @@ const Navbar = () => {
             )
           )}
           <LanguageSelector />
+          <ThemeToggle />
           <Button asChild>
             <a
               href="https://www.kiesopmaat.nl/modules/avans/ATD/140782/"
@@ -65,6 +67,7 @@ const Navbar = () => {
         {/* Mobile toggle */}
         <div className="md:hidden flex items-center gap-2">
           <LanguageSelector />
+          <ThemeToggle />
           <button
             className="p-2 text-foreground"
             onClick={() => setOpen(!open)}
