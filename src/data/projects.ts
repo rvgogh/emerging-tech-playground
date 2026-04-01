@@ -3,6 +3,7 @@ export type T = { nl: string; en: string };
 export interface Project {
   title: string;
   client: string;
+  clientUrl?: string;
   year: number;
   semester: T;
   fields: string[];
