@@ -250,6 +250,65 @@ export const translations = {
       },
     ],
   },
+  deadline: {
+    main: {
+      nl: "📅 Schrijf je in vóór 1 mei voor de start in september!",
+      en: "📅 Enroll before May 1st for the September start!",
+    },
+    late: {
+      nl: "Inschrijven tot 1 juli is mogelijk, onder voorbehoud van beschikbare plekken.",
+      en: "Late enrollment until July 1st is possible, subject to availability.",
+    },
+  },
+  featured: {
+    label: { nl: "Uitgelicht", en: "Featured" },
+    heading: { nl: "Projecten in de spotlight", en: "Featured Projects" },
+    sub: {
+      nl: "Een greep uit de projecten die studenten hebben uitgevoerd bij echte opdrachtgevers.",
+      en: "A selection of projects students have completed for real clients.",
+    },
+    viewAll: { nl: "Bekijk alle projecten", en: "View all projects" },
+  },
+  faq: {
+    heading: { nl: "Veelgestelde vragen", en: "Frequently Asked Questions" },
+    items: [
+      {
+        q: { nl: "Kan ik meedoen vanuit elke opleiding?", en: "Can I join from any study program?" },
+        a: {
+          nl: "De minor staat open voor 3e jaars HBO-studenten met een technische, design- of innovatiegerichte opleiding. Denk aan opleidingen als HBO-ICT, CMD, Technische Bedrijfskunde, Werktuigbouwkunde, Elektrotechniek of vergelijkbaar.",
+          en: "The minor is open to 3rd year university of applied sciences students in technology, design, or innovation programs. Think of programs like Software Engineering, Interaction Design, Industrial Engineering, Mechanical Engineering, Electrical Engineering, or similar.",
+        },
+      },
+      {
+        q: { nl: "Heb ik programmeerervaring nodig?", en: "Do I need programming experience?" },
+        a: {
+          nl: "Niet per se. De minor is multidisciplinair — je werkt samen met studenten uit verschillende vakgebieden. Wel is het handig als je basiskennis hebt binnen jouw eigen discipline.",
+          en: "Not necessarily. The minor is multidisciplinary — you work together with students from different fields. It is helpful if you have basic knowledge within your own discipline.",
+        },
+      },
+      {
+        q: { nl: "Hoe ziet een typische week eruit?", en: "What does a typical week look like?" },
+        a: {
+          nl: "Je werkt voltijd in een multidisciplinair team aan een project bij een echte opdrachtgever. De weken bestaan uit teamoverleg, workshops, coaching en hands-on bouwen aan jullie oplossing.",
+          en: "You work full-time in a multidisciplinary team on a project for a real client. Weeks consist of team meetings, workshops, coaching, and hands-on building of your solution.",
+        },
+      },
+      {
+        q: { nl: "Kan ik de minor combineren met een bijbaan?", en: "Can I combine the minor with a part-time job?" },
+        a: {
+          nl: "De minor is voltijd (30 EC) en vrij intensief. Een kleine bijbaan in het weekend is meestal goed te combineren, maar doordeweeks wordt volledige inzet verwacht.",
+          en: "The minor is full-time (30 ECTS) and quite intensive. A small weekend job is usually manageable, but full commitment is expected during the week.",
+        },
+      },
+      {
+        q: { nl: "Hoe word ik beoordeeld?", en: "How am I assessed?" },
+        a: {
+          nl: "Je wordt beoordeeld op projectwerk, presentaties en je portfolio — geen tentamens of multiple choice. De nadruk ligt op je bijdrage aan het team en de groei die je doormaakt.",
+          en: "You're assessed on project work, presentations, and your portfolio — no exams or multiple choice. The focus is on your contribution to the team and personal growth.",
+        },
+      },
+    ],
+  },
 } as const;
 
 export type Translations = typeof translations;
