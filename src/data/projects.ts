@@ -50,7 +50,8 @@ export const projects: Project[] = [
   },
   {
     title: "Or a c.l.e. - Streetcred",
-    client: "Or a c.l.e.",
+    client: "Openbaring ruimte (Matthijs Bosman)",
+    clientUrl: "https://www.openbaringruimte.nl/",
     year: 2025,
     semester: { nl: "najaar", en: "fall" },
     fields: ["Design", "ICT", "Engineering"],
@@ -82,6 +83,7 @@ export const projects: Project[] = [
   {
     title: "Designing a VR Room",
     client: "Regina Coeli",
+    clientUrl: "https://www.reginacoeli.nl/",
     year: 2025,
     semester: { nl: "najaar", en: "fall" },
     fields: ["Design", "Business"],
@@ -112,7 +114,8 @@ export const projects: Project[] = [
   },
   {
     title: "AI against Litter",
-    client: "Avans Hogeschool",
+    client: "Avans lectoraat Applied responsible AI",
+    clientUrl: "https://www.avans.nl/onderzoek/perspectief-in-gezondheid/applied-responsible-artificial-intelligence",
     year: 2025,
     semester: { nl: "najaar", en: "fall" },
     fields: ["Design", "ICT", "Engineering", "Business"],
@@ -144,6 +147,7 @@ export const projects: Project[] = [
   {
     title: "Interactive Light Object",
     client: "Innovatielab",
+    clientUrl: "https://www.ik-db.nl/",
     year: 2025,
     semester: { nl: "najaar", en: "fall" },
     fields: ["Design", "ICT", "Engineering"],
@@ -207,6 +211,7 @@ export const projects: Project[] = [
   {
     title: "Sensorlab 2.0",
     client: "Innovatielab",
+    clientUrl: "https://www.ik-db.nl/",
     year: 2025,
     semester: { nl: "najaar", en: "fall" },
     fields: ["Design", "ICT", "Engineering", "Business"],
