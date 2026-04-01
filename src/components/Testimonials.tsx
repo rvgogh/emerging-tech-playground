@@ -107,9 +107,6 @@ const Testimonials = () => {
                     <p className="text-muted-foreground text-xs">
                       {t(review.study)} · {t(review.country)}
                     </p>
-                    <p className="text-primary text-xs font-medium mt-1">
-                      {review.project}
-                    </p>
                   </div>
                 </CardContent>
               </Card>

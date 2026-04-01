@@ -14,8 +14,8 @@ export const translations = {
     title2: { nl: ", Engineering, ", en: ", Engineering, " },
     title3: { nl: " & Business.", en: " & Business." },
     subtitle: {
-      nl: "Vergeet de standaard minor-vakjes. In deze minor stap je uit je eigen wereld. Je wordt niet alleen beter in je vak, maar ontdekt vooral hoe jouw skills passen bij die van tech, design en business.",
-      en: "Forget standard electives. In this minor you step outside your comfort zone. You don't just improve your own skills — you discover how they connect with tech, design and business.",
+      nl: "Vergeet de standaard minor-vakjes. In deze minor stap je uit je eigen wereld. Je wordt niet alleen beter in je vak, maar ontdekt vooral hoe jouw skills passen binnen multidisciplinaire context.",
+      en: "Forget standard electives. In this minor you step outside your comfort zone. You don't just improve your own skills — you discover how they fit within a multidisciplinary context.",
     },
     ctaPrimary: { nl: "Meer weten?", en: "Learn more?" },
     ctaSecondary: { nl: "Ontdek de interessegebieden", en: "Discover the focus areas" },
@@ -53,8 +53,8 @@ export const translations = {
       {
         title: { nl: "Business", en: "Business" },
         description: {
-          nl: "Maak je concepten winstgevend. Ontwikkel business modellen en pitch je startup.",
-          en: "Make your concepts profitable. Develop business models and pitch your startup.",
+          nl: "Begeleid de innovatieve ideeën naar haalbare en realistische producten. Stel de business case op, ontwerp business modellen en pitch je startup.",
+          en: "Guide innovative ideas towards feasible and realistic products. Build the business case, design business models and pitch your startup.",
         },
       },
     ],
