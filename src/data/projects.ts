@@ -114,7 +114,8 @@ export const projects: Project[] = [
   },
   {
     title: "AI against Litter",
-    client: "Avans Hogeschool",
+    client: "Avans lectoraat Applied responsible AI",
+    clientUrl: "https://www.avans.nl/onderzoek/perspectief-in-gezondheid/applied-responsible-artificial-intelligence",
     year: 2025,
     semester: { nl: "najaar", en: "fall" },
     fields: ["Design", "ICT", "Engineering", "Business"],
