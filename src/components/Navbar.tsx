@@ -49,6 +49,15 @@ const Navbar = () => {
           )}
           <LanguageSelector />
           <Button asChild>
+            <a
+              href="https://www.kiesopmaat.nl/modules/avans/ATD/140782/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t(translations.hero.ctaEnroll)}
+            </a>
+          </Button>
+          <Button variant="outline" asChild>
             <a href="#contact">{t(translations.nav.cta)}</a>
           </Button>
         </div>
@@ -91,6 +100,16 @@ const Navbar = () => {
             )
           )}
           <Button className="w-full" asChild>
+            <a
+              href="https://www.kiesopmaat.nl/modules/avans/ATD/140782/"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setOpen(false)}
+            >
+              {t(translations.hero.ctaEnroll)}
+            </a>
+          </Button>
+          <Button variant="outline" className="w-full" asChild>
             <a href="#contact" onClick={() => setOpen(false)}>
               {t(translations.nav.cta)}
             </a>
