@@ -24,7 +24,7 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 bg-background/90 backdrop-blur-md border-b">
       <div className="container mx-auto flex items-center justify-between h-16 px-4 lg:px-8">
         <a href="#" className="flex items-center gap-2">
-          <img src={logo} alt="ETP Logo" className="h-10 w-auto" />
+          <img src={logo} alt="ETP Logo" className="h-10 w-auto dark:brightness-0 dark:invert" />
         </a>
 
         {/* Desktop links */}
