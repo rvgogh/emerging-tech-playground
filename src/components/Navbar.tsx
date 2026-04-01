@@ -49,6 +49,7 @@ const Navbar = () => {
             )
           )}
           <LanguageSelector />
+          <ThemeToggle />
           <Button asChild>
             <a
               href="https://www.kiesopmaat.nl/modules/avans/ATD/140782/"
