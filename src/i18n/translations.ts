@@ -265,17 +265,25 @@ export const translations = {
     label: { nl: "Werkwijze", en: "Our Process" },
     heading: { nl: "Hoe werken we?", en: "How do we work?" },
     sub: {
-      nl: "In 16 weken doorloop je 4 iteraties. Elke iteratie bouw je verder aan je oplossing — van vraagarticulatie tot werkend prototype.",
-      en: "In 16 weeks you go through 4 iterations. Each iteration you build on your solution — from problem definition to working prototype.",
+      nl: "In 20 weken doorloop je een volledig traject: van onboarding en kennismaking tot oplevering en overdracht, met daartussen 4 intensieve iteraties.",
+      en: "In 20 weeks you go through a complete trajectory: from onboarding and introduction to delivery and handover, with 4 intensive iterations in between.",
     },
     iterations: [
+      {
+        title: { nl: "Onboarding", en: "Onboarding" },
+        description: {
+          nl: "Je maakt kennis met je team, de opdrachtgever en de werkwijze. Je volgt introductie-workshops en bereidt je voor op het project.",
+          en: "You get to know your team, the client and the way of working. You attend introductory workshops and prepare for the project.",
+        },
+        duration: { nl: "Week 1–2", en: "Week 1–2" },
+      },
       {
         title: { nl: "Iteratie 1 — Ontdekken", en: "Iteration 1 — Discover" },
         description: {
           nl: "Je duikt in de opdracht, leert de opdrachtgever kennen en brengt het probleem in kaart. Je voert deskresearch uit, interviewt stakeholders en formuleert de kern van de vraag.",
           en: "You dive into the assignment, get to know the client and map out the problem. You conduct desk research, interview stakeholders and formulate the core question.",
         },
-        duration: { nl: "Week 1–4", en: "Week 1–4" },
+        duration: { nl: "Week 3–6", en: "Week 3–6" },
       },
       {
         title: { nl: "Iteratie 2 — Ideeën & Concepten", en: "Iteration 2 — Ideate & Concept" },
@@ -283,7 +291,7 @@ export const translations = {
           nl: "Op basis van je inzichten genereer je ideeën en werk je deze uit tot concrete concepten. Je maakt eerste prototypes en test ze met gebruikers.",
           en: "Based on your insights you generate ideas and develop them into concrete concepts. You create first prototypes and test them with users.",
         },
-        duration: { nl: "Week 5–8", en: "Week 5–8" },
+        duration: { nl: "Week 7–10", en: "Week 7–10" },
       },
       {
         title: { nl: "Iteratie 3 — Bouwen & Testen", en: "Iteration 3 — Build & Test" },
@@ -291,7 +299,7 @@ export const translations = {
           nl: "Je bouwt een werkend prototype en test dit intensief. Je itereert op basis van feedback van gebruikers en de opdrachtgever.",
           en: "You build a working prototype and test it intensively. You iterate based on feedback from users and the client.",
         },
-        duration: { nl: "Week 9–12", en: "Week 9–12" },
+        duration: { nl: "Week 11–14", en: "Week 11–14" },
       },
       {
         title: { nl: "Iteratie 4 — Opleveren & Presenteren", en: "Iteration 4 — Deliver & Present" },
@@ -299,7 +307,15 @@ export const translations = {
           nl: "Je rondt het project af, documenteert je werk en presenteert de eindoplossing aan de opdrachtgever. Je reflecteert op je leerproces en vult je portfolio aan.",
           en: "You finalize the project, document your work and present the final solution to the client. You reflect on your learning process and complete your portfolio.",
         },
-        duration: { nl: "Week 13–16", en: "Week 13–16" },
+        duration: { nl: "Week 15–18", en: "Week 15–18" },
+      },
+      {
+        title: { nl: "Afronding & Overdracht", en: "Wrap-up & Handover" },
+        description: {
+          nl: "Je draagt het project over aan de opdrachtgever, rondt de documentatie af en sluit je portfolio af. Tijd voor reflectie en evaluatie.",
+          en: "You hand over the project to the client, finalize documentation and complete your portfolio. Time for reflection and evaluation.",
+        },
+        duration: { nl: "Week 19–20", en: "Week 19–20" },
       },
     ],
   },
