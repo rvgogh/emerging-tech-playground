@@ -52,7 +52,7 @@ const Testimonials = () => {
           </h2>
         </div>
 
-        <div className="relative max-w-6xl mx-auto">
+        <div className="relative max-w-6xl mx-auto px-0 sm:px-8 lg:px-16">
           {/* Navigation buttons */}
           <Button
             variant="outline"
