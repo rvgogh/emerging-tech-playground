@@ -83,6 +83,7 @@ export const projects: Project[] = [
   {
     title: "Designing a VR Room",
     client: "Regina Coeli",
+    clientUrl: "https://www.reginacoeli.nl/",
     year: 2025,
     semester: { nl: "najaar", en: "fall" },
     fields: ["Design", "Business"],
