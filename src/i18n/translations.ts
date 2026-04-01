@@ -323,7 +323,7 @@ export const translations = {
     label: { nl: "Contactpersoon", en: "Contact Person" },
     name: "Roland van Gogh",
     role: { nl: "Minorcoördinator", en: "Minor Coordinator" },
-    cta: { nl: "Bel Roland", en: "Call Roland" },
+    cta: { nl: "Chat via Teams", en: "Chat via Teams" },
   },
   featured: {
     label: { nl: "Uitgelicht", en: "Featured" },
