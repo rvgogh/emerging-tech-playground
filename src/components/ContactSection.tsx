@@ -92,10 +92,12 @@ const ContactSection = () => {
                 <p className="text-white font-bold">{cp.name}</p>
                 <p className="text-white/60 text-sm">{t(cp.role)}</p>
                 <a
-                  href={`tel:${getPhone()}`}
+                  href={getTeamsLink()}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 text-primary text-sm font-medium mt-1 hover:underline"
                 >
-                  <Phone size={14} />
+                  <MessageSquare size={14} />
                   {t(cp.cta)}
                 </a>
               </div>
