@@ -19,7 +19,7 @@ const Hero = () => {
           alt={t(h.imgAlt)}
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-foreground/80 via-foreground/60 to-foreground/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40" />
       </div>
 
       <div className="container mx-auto px-4 py-20 relative z-10 text-center flex flex-col items-center">
