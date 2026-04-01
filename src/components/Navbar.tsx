@@ -67,6 +67,7 @@ const Navbar = () => {
         {/* Mobile toggle */}
         <div className="md:hidden flex items-center gap-2">
           <LanguageSelector />
+          <ThemeToggle />
           <button
             className="p-2 text-foreground"
             onClick={() => setOpen(!open)}
