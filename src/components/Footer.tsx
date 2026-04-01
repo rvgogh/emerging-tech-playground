@@ -35,7 +35,7 @@ const Footer = () => {
             </span>
           </div>
 
-          <div className="flex gap-6 text-sm">
+          <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">
             {footerLinks.map((l) =>
               (l as any).isRoute ? (
                 <Link
