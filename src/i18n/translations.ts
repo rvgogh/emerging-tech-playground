@@ -347,8 +347,8 @@ export const translations = {
       {
         q: { nl: "Hoe ziet een typische week eruit?", en: "What does a typical week look like?" },
         a: {
-          nl: "Je werkt voltijd in een multidisciplinair team aan een project bij een echte opdrachtgever. De weken bestaan uit teamoverleg, workshops, coaching en hands-on bouwen aan jullie oplossing.",
-          en: "You work full-time in a multidisciplinary team on a project for a real client. Weeks consist of team meetings, workshops, coaching, and hands-on building of your solution.",
+          nl: "Je werkt 3 tot 4 dagen per week in een multidisciplinair team aan een project bij een echte opdrachtgever. De weken bestaan uit teamoverleg, workshops, coaching en hands-on bouwen aan jullie oplossing. De overige 1-2 dagen werk je aan je individuele leerdoelen.",
+          en: "You work 3 to 4 days per week in a multidisciplinary team on a project for a real client. Weeks consist of team meetings, workshops, coaching, and hands-on building of your solution. The remaining 1-2 days you work on your individual learning goals.",
         },
       },
       {
