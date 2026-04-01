@@ -253,8 +253,8 @@ export const translations = {
   },
   deadline: {
     main: {
-      nl: "Schrijf je in vóór 1 mei voor de start in september!",
-      en: "Enroll before May 1st for the September start!",
+      nl: "Schrijf je in vóór 1 mei en start in september!",
+      en: "Enroll before May 1st and start in September!",
     },
     late: {
       nl: "Inschrijven tot 1 juli is mogelijk, onder voorbehoud van beschikbare plekken.",
