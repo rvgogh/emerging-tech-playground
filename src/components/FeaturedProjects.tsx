@@ -1,15 +1,25 @@
 import { Link } from "react-router-dom";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Building2, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { translations } from "@/i18n/translations";
 import { projects } from "@/data/projects";
 
-const featured = [projects[0], projects[3], projects[4]]; // Healthy Workplace, AI against Litter, Interactive Light
+const featured = [projects[0], projects[3], projects[4]];
+
+const fieldColors: Record<string, string> = {
+  ICT: "bg-blue-100 text-blue-800",
+  Design: "bg-pink-100 text-pink-800",
+  Engineering: "bg-amber-100 text-amber-800",
+  Business: "bg-emerald-100 text-emerald-800",
+};
 
 const FeaturedProjects = () => {
   const { t } = useLanguage();
   const f = translations.featured;
+  const pt = translations.projects;
 
   return (
     <section className="py-16 lg:py-20 bg-secondary">
@@ -25,34 +35,64 @@ const FeaturedProjects = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          {featured.map((project, i) => (
-            <Link
-              key={i}
-              to={`/projecten?field=${project.fields[0]}`}
-              className="group block rounded-2xl bg-background border border-border overflow-hidden hover:shadow-lg transition-shadow"
+          {featured.map((project) => (
+            <Card
+              key={project.title}
+              className="border-0 shadow-lg hover:shadow-xl transition-all group"
             >
-              <div className="p-6 flex flex-col h-full">
-                <div className="flex flex-wrap gap-2 mb-3">
+              <CardContent className="p-6">
+                <div className="flex flex-wrap gap-1.5 mb-4">
                   {project.fields.map((field) => (
-                    <span
+                    <Badge
                       key={field}
-                      className="text-xs font-semibold uppercase tracking-wider text-primary bg-primary/10 px-2 py-0.5 rounded-full"
+                      variant="secondary"
+                      className={`text-xs font-medium ${fieldColors[field] || ""}`}
                     >
                       {field}
-                    </span>
+                    </Badge>
                   ))}
                 </div>
                 <h3 className="font-heading text-lg font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
                   {project.title}
                 </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed line-clamp-3 flex-1">
+                <div className="flex items-center gap-4 text-muted-foreground text-sm mb-4">
+                  <span className="flex items-center gap-1">
+                    <Building2 size={14} />
+                    {project.client}
+                  </span>
+                  <span className="flex items-center gap-1">
+                    <Calendar size={14} />
+                    {project.year}
+                  </span>
+                </div>
+                <p className="text-muted-foreground text-sm leading-relaxed line-clamp-3 mb-4">
                   {t(project.context)}
                 </p>
-                <span className="text-primary text-sm font-medium mt-4 flex items-center gap-1 group-hover:gap-2 transition-all">
-                  {t(translations.projects.readMore)} <ArrowRight size={14} />
-                </span>
-              </div>
-            </Link>
+                <details className="group/details">
+                  <summary className="text-primary text-sm font-medium cursor-pointer hover:underline">
+                    {t(pt.readMore)}
+                  </summary>
+                  <div className="mt-4 space-y-3 text-sm text-muted-foreground animate-fade-in">
+                    <div>
+                      <h4 className="font-bold text-foreground mb-1">{t(pt.problemLabel)}</h4>
+                      <p className="leading-relaxed">{t(project.problem)}</p>
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-foreground mb-1">{t(pt.goalsLabel)}</h4>
+                      <p className="leading-relaxed">{t(project.goals)}</p>
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-foreground mb-1">{t(pt.resultsLabel)}</h4>
+                      <p className="leading-relaxed">{t(project.results)}</p>
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-foreground mb-1">{t(pt.conclusionLabel)}</h4>
+                      <p className="leading-relaxed">{t(project.conclusion)}</p>
+                    </div>
+                  </div>
+                </details>
+              </CardContent>
+            </Card>
           ))}
         </div>
 
