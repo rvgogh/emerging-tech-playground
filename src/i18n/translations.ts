@@ -261,6 +261,54 @@ export const translations = {
       en: "Late enrollment until July 1st is possible, subject to availability.",
     },
   },
+  process: {
+    label: { nl: "Werkwijze", en: "Our Process" },
+    heading: { nl: "Hoe werken we?", en: "How do we work?" },
+    sub: {
+      nl: "In 16 weken doorloop je 4 iteraties. Elke iteratie bouw je verder aan je oplossing — van vraagarticulatie tot werkend prototype.",
+      en: "In 16 weeks you go through 4 iterations. Each iteration you build on your solution — from problem definition to working prototype.",
+    },
+    iterations: [
+      {
+        title: { nl: "Iteratie 1 — Ontdekken", en: "Iteration 1 — Discover" },
+        description: {
+          nl: "Je duikt in de opdracht, leert de opdrachtgever kennen en brengt het probleem in kaart. Je voert deskresearch uit, interviewt stakeholders en formuleert de kern van de vraag.",
+          en: "You dive into the assignment, get to know the client and map out the problem. You conduct desk research, interview stakeholders and formulate the core question.",
+        },
+        duration: { nl: "Week 1–4", en: "Week 1–4" },
+      },
+      {
+        title: { nl: "Iteratie 2 — Ideeën & Concepten", en: "Iteration 2 — Ideate & Concept" },
+        description: {
+          nl: "Op basis van je inzichten genereer je ideeën en werk je deze uit tot concrete concepten. Je maakt eerste prototypes en test ze met gebruikers.",
+          en: "Based on your insights you generate ideas and develop them into concrete concepts. You create first prototypes and test them with users.",
+        },
+        duration: { nl: "Week 5–8", en: "Week 5–8" },
+      },
+      {
+        title: { nl: "Iteratie 3 — Bouwen & Testen", en: "Iteration 3 — Build & Test" },
+        description: {
+          nl: "Je bouwt een werkend prototype en test dit intensief. Je itereert op basis van feedback van gebruikers en de opdrachtgever.",
+          en: "You build a working prototype and test it intensively. You iterate based on feedback from users and the client.",
+        },
+        duration: { nl: "Week 9–12", en: "Week 9–12" },
+      },
+      {
+        title: { nl: "Iteratie 4 — Opleveren & Presenteren", en: "Iteration 4 — Deliver & Present" },
+        description: {
+          nl: "Je rondt het project af, documenteert je werk en presenteert de eindoplossing aan de opdrachtgever. Je reflecteert op je leerproces en vult je portfolio aan.",
+          en: "You finalize the project, document your work and present the final solution to the client. You reflect on your learning process and complete your portfolio.",
+        },
+        duration: { nl: "Week 13–16", en: "Week 13–16" },
+      },
+    ],
+  },
+  contactPerson: {
+    label: { nl: "Contactpersoon", en: "Contact Person" },
+    name: "Roland van Gogh",
+    role: { nl: "Minorcoördinator", en: "Minor Coordinator" },
+    cta: { nl: "Bel Roland", en: "Call Roland" },
+  },
   featured: {
     label: { nl: "Uitgelicht", en: "Featured" },
     heading: { nl: "Projecten in de spotlight", en: "Featured Projects" },
@@ -306,6 +354,13 @@ export const translations = {
         a: {
           nl: "Je wordt beoordeeld op projectwerk, presentaties en je portfolio — geen tentamens of multiple choice. De nadruk ligt op je bijdrage aan het team en de groei die je doormaakt.",
           en: "You're assessed on project work, presentations, and your portfolio — no exams or multiple choice. The focus is on your contribution to the team and personal growth.",
+        },
+      },
+      {
+        q: { nl: "Hoe is de verdeling van de 30 EC?", en: "How are the 30 ECTS distributed?" },
+        a: {
+          nl: "De minor bestaat uit drie onderdelen: het Multidisciplinair Project (18 EC), Professionele Houding (4 EC) en Keuzevakken (8 EC). Het project vormt de kern, aangevuld met persoonlijke ontwikkeling en verdiepende vakken naar keuze.",
+          en: "The minor consists of three parts: the Multidisciplinary Project (18 ECTS), Professional Attitude (4 ECTS), and Elective Courses (8 ECTS). The project is the core, complemented by personal development and elective specialization courses.",
         },
       },
     ],

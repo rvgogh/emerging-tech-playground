@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
+import { Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -15,13 +16,20 @@ import {
 import { useToast } from "@/hooks/use-toast";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { translations } from "@/i18n/translations";
+import rolandImg from "@/assets/roland-van-gogh.jpg";
 
 type ContactForm = { email: string; vraag: string };
+
+const getPhone = () => {
+  const parts = ["06", " 57", "31", "02", "80"];
+  return parts.join("");
+};
 
 const ContactSection = () => {
   const { toast } = useToast();
   const { t, lang } = useLanguage();
   const c = translations.contact;
+  const cp = translations.contactPerson;
 
   const contactSchema = z.object({
     email: z
@@ -72,6 +80,26 @@ const ContactSection = () => {
             <p className="mt-4 text-white/70 leading-relaxed text-lg">
               {t(c.description)}
             </p>
+
+            {/* Contact person */}
+            <div className="mt-8 flex items-center gap-4 bg-white/5 rounded-xl p-4 border border-white/10">
+              <img
+                src={rolandImg}
+                alt={cp.name}
+                className="w-16 h-16 rounded-full object-cover"
+              />
+              <div>
+                <p className="text-white font-bold">{cp.name}</p>
+                <p className="text-white/60 text-sm">{t(cp.role)}</p>
+                <a
+                  href={`tel:${getPhone()}`}
+                  className="inline-flex items-center gap-1.5 text-primary text-sm font-medium mt-1 hover:underline"
+                >
+                  <Phone size={14} />
+                  {t(cp.cta)}
+                </a>
+              </div>
+            </div>
           </div>
 
           <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">

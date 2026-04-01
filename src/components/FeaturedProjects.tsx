@@ -58,7 +58,11 @@ const FeaturedProjects = () => {
                 <div className="flex items-center gap-4 text-muted-foreground text-sm mb-4">
                   <span className="flex items-center gap-1">
                     <Building2 size={14} />
-                    {project.client}
+                    {project.clientUrl ? (
+                      <a href={project.clientUrl} target="_blank" rel="noopener noreferrer" className="hover:text-primary hover:underline transition-colors">
+                        {project.client}
+                      </a>
+                    ) : project.client}
                   </span>
                   <span className="flex items-center gap-1">
                     <Calendar size={14} />

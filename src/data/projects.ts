@@ -3,6 +3,7 @@ export type T = { nl: string; en: string };
 export interface Project {
   title: string;
   client: string;
+  clientUrl?: string;
   year: number;
   semester: T;
   fields: string[];
@@ -18,6 +19,7 @@ export const projects: Project[] = [
   {
     title: "Healthy Workplace Monitoring System",
     client: "Van Beek",
+    clientUrl: "https://www.van-beek.nl/",
     year: 2025,
     semester: { nl: "najaar", en: "fall" },
     fields: ["Engineering", "ICT", "Business"],
@@ -173,6 +175,7 @@ export const projects: Project[] = [
   {
     title: "BESS Subsystems",
     client: "TE Connectivity",
+    clientUrl: "https://www.te.com/",
     year: 2025,
     semester: { nl: "najaar", en: "fall" },
     fields: ["Engineering", "Business"],
