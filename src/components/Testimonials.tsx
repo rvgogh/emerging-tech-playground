@@ -98,14 +98,14 @@ const Testimonials = () => {
                     <Quote size={20} className="text-primary/20" />
                   </div>
                   <p className="text-foreground leading-relaxed mb-6 text-sm line-clamp-4">
-                    "{review.quote}"
+                    "{t(review.quote)}"
                   </p>
                   <div className="border-t pt-4">
                     <p className="font-heading font-bold text-foreground text-sm">
                       {review.name}
                     </p>
                     <p className="text-muted-foreground text-xs">
-                      {review.study} · {review.country}
+                      {t(review.study)} · {t(review.country)}
                     </p>
                     <p className="text-primary text-xs font-medium mt-1">
                       {review.project}

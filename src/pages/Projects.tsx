@@ -119,7 +119,7 @@ const Projects = () => {
                     </span>
                   </div>
                   <p className="text-muted-foreground text-sm leading-relaxed line-clamp-3 mb-4">
-                    {project.context}
+                    {t(project.context)}
                   </p>
                   <details className="group/details">
                     <summary className="text-primary text-sm font-medium cursor-pointer hover:underline">
@@ -128,19 +128,19 @@ const Projects = () => {
                     <div className="mt-4 space-y-3 text-sm text-muted-foreground animate-fade-in">
                       <div>
                         <h4 className="font-bold text-foreground mb-1">{t(pt.problemLabel)}</h4>
-                        <p className="leading-relaxed">{project.problem}</p>
+                        <p className="leading-relaxed">{t(project.problem)}</p>
                       </div>
                       <div>
                         <h4 className="font-bold text-foreground mb-1">{t(pt.goalsLabel)}</h4>
-                        <p className="leading-relaxed">{project.goals}</p>
+                        <p className="leading-relaxed">{t(project.goals)}</p>
                       </div>
                       <div>
                         <h4 className="font-bold text-foreground mb-1">{t(pt.resultsLabel)}</h4>
-                        <p className="leading-relaxed">{project.results}</p>
+                        <p className="leading-relaxed">{t(project.results)}</p>
                       </div>
                       <div>
                         <h4 className="font-bold text-foreground mb-1">{t(pt.conclusionLabel)}</h4>
-                        <p className="leading-relaxed">{project.conclusion}</p>
+                        <p className="leading-relaxed">{t(project.conclusion)}</p>
                       </div>
                     </div>
                   </details>

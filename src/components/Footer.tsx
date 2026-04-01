@@ -11,7 +11,7 @@ const obfuscatedEmail = () => {
 };
 
 const Footer = () => {
-  const { t, lang } = useLanguage();
+  const { t } = useLanguage();
   const nav = translations.nav;
   const f = translations.footer;
 
