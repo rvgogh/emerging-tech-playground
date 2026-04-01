@@ -19,6 +19,7 @@ export const projects: Project[] = [
   {
     title: "Healthy Workplace Monitoring System",
     client: "Van Beek",
+    clientUrl: "https://www.van-beek.nl/",
     year: 2025,
     semester: { nl: "najaar", en: "fall" },
     fields: ["Engineering", "ICT", "Business"],
