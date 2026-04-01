@@ -20,8 +20,8 @@ import rolandImg from "@/assets/roland-van-gogh.jpg";
 
 type ContactForm = { email: string; vraag: string };
 
-const getPhone = () => {
-  const parts = ["06", " 57", "31", "02", "80"];
+const getTeamsLink = () => {
+  const parts = ["https://teams.microsoft.com/l/chat/0/0?users=", "rwa.van", "gogh@", "avans.nl"];
   return parts.join("");
 };
 
