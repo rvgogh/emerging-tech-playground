@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { Phone } from "lucide-react";
+import { MessageSquare } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -20,8 +20,8 @@ import rolandImg from "@/assets/roland-van-gogh.jpg";
 
 type ContactForm = { email: string; vraag: string };
 
-const getPhone = () => {
-  const parts = ["06", " 57", "31", "02", "80"];
+const getTeamsLink = () => {
+  const parts = ["https://teams.microsoft.com/l/chat/0/0?users=", "rwa.van", "gogh@", "avans.nl"];
   return parts.join("");
 };
 
@@ -92,10 +92,12 @@ const ContactSection = () => {
                 <p className="text-white font-bold">{cp.name}</p>
                 <p className="text-white/60 text-sm">{t(cp.role)}</p>
                 <a
-                  href={`tel:${getPhone()}`}
+                  href={getTeamsLink()}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 text-primary text-sm font-medium mt-1 hover:underline"
                 >
-                  <Phone size={14} />
+                  <MessageSquare size={14} />
                   {t(cp.cta)}
                 </a>
               </div>
