@@ -345,13 +345,6 @@ export const translations = {
         },
       },
       {
-        q: { nl: "Heb ik programmeerervaring nodig?", en: "Do I need programming experience?" },
-        a: {
-          nl: "Niet per se. De minor is multidisciplinair — je werkt samen met studenten uit verschillende vakgebieden. Wel is het handig als je basiskennis hebt binnen jouw eigen discipline.",
-          en: "Not necessarily. The minor is multidisciplinary — you work together with students from different fields. It is helpful if you have basic knowledge within your own discipline.",
-        },
-      },
-      {
         q: { nl: "Hoe ziet een typische week eruit?", en: "What does a typical week look like?" },
         a: {
           nl: "Je werkt voltijd in een multidisciplinair team aan een project bij een echte opdrachtgever. De weken bestaan uit teamoverleg, workshops, coaching en hands-on bouwen aan jullie oplossing.",
