@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import LanguageSelector from "@/components/LanguageSelector";
+import ThemeToggle from "@/components/ThemeToggle";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { translations } from "@/i18n/translations";
 import logo from "@/assets/ETP_logo_transparant.png";
