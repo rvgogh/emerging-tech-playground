@@ -57,7 +57,7 @@ const Testimonials = () => {
           <Button
             variant="outline"
             size="icon"
-            className="absolute -left-4 lg:-left-12 top-1/2 -translate-y-1/2 z-10 rounded-full shadow-md bg-background hidden sm:flex"
+            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 rounded-full shadow-md bg-background hidden sm:flex"
             onClick={() => handleManualNav("prev")}
             aria-label="Previous"
           >
