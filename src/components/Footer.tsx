@@ -85,7 +85,7 @@ const Footer = () => {
           <span>© {new Date().getFullYear()} Emerging Technologies Playground. {t(f.rights)}</span>
           <PrivacyModal>
             <button className="hover:text-white transition-colors underline">
-              {lang === "nl" ? "Privacyverklaring" : "Privacy Statement"}
+              {t(translations.privacy.title)}
             </button>
           </PrivacyModal>
         </div>
