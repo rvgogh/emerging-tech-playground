@@ -52,12 +52,12 @@ const Testimonials = () => {
           </h2>
         </div>
 
-        <div className="relative max-w-6xl mx-auto">
+        <div className="relative max-w-6xl mx-auto px-0 sm:px-8 lg:px-16">
           {/* Navigation buttons */}
           <Button
             variant="outline"
             size="icon"
-            className="absolute -left-4 lg:-left-12 top-1/2 -translate-y-1/2 z-10 rounded-full shadow-md bg-background hidden sm:flex"
+            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 rounded-full shadow-md bg-background hidden sm:flex"
             onClick={() => handleManualNav("prev")}
             aria-label="Previous"
           >
@@ -66,7 +66,7 @@ const Testimonials = () => {
           <Button
             variant="outline"
             size="icon"
-            className="absolute -right-4 lg:-right-12 top-1/2 -translate-y-1/2 z-10 rounded-full shadow-md bg-background hidden sm:flex"
+            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 rounded-full shadow-md bg-background hidden sm:flex"
             onClick={() => handleManualNav("next")}
             aria-label="Next"
           >
