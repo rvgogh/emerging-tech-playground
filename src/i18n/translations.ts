@@ -203,6 +203,53 @@ export const translations = {
       en: "All rights reserved.",
     },
   },
+  cookie: {
+    message: {
+      nl: "Deze website gebruikt alleen functionele cookies voor een optimale ervaring. Geen tracking, geen advertenties.",
+      en: "This website only uses functional cookies for an optimal experience. No tracking, no ads.",
+    },
+    accept: { nl: "Akkoord", en: "Accept" },
+  },
+  privacy: {
+    title: { nl: "Privacyverklaring", en: "Privacy Statement" },
+    sections: [
+      {
+        heading: { nl: "Welke gegevens verzamelen wij?", en: "What data do we collect?" },
+        text: {
+          nl: "Wanneer je het contactformulier invult, verzamelen wij je e-mailadres en eventueel je vraag. We gebruiken geen tracking cookies of analysetools van derden.",
+          en: "When you fill in the contact form, we collect your email address and optionally your question. We do not use tracking cookies or third-party analytics.",
+        },
+      },
+      {
+        heading: { nl: "Waarvoor gebruiken wij je gegevens?", en: "How do we use your data?" },
+        text: {
+          nl: "Je gegevens worden uitsluitend gebruikt om je vraag te beantwoorden en je te informeren over de minor Emerging Technologies Playground.",
+          en: "Your data is only used to answer your question and inform you about the Emerging Technologies Playground minor.",
+        },
+      },
+      {
+        heading: { nl: "Delen met derden", en: "Sharing with third parties" },
+        text: {
+          nl: "Wij delen je gegevens niet met derden, tenzij dit noodzakelijk is voor de uitvoering van onze dienstverlening of wettelijk verplicht is.",
+          en: "We do not share your data with third parties unless required for our services or by law.",
+        },
+      },
+      {
+        heading: { nl: "Bewaartermijn", en: "Retention period" },
+        text: {
+          nl: "Je gegevens worden niet langer bewaard dan noodzakelijk voor het doel waarvoor ze zijn verzameld.",
+          en: "Your data is not stored longer than necessary for the purpose it was collected.",
+        },
+      },
+      {
+        heading: { nl: "Je rechten", en: "Your rights" },
+        text: {
+          nl: "Je hebt het recht om je gegevens in te zien, te corrigeren of te laten verwijderen. Neem hiervoor contact op via het contactformulier.",
+          en: "You have the right to view, correct, or delete your data. Contact us through the contact form.",
+        },
+      },
+    ],
+  },
 } as const;
 
 export type Translations = typeof translations;
