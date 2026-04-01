@@ -211,6 +211,7 @@ export const projects: Project[] = [
   {
     title: "Sensorlab 2.0",
     client: "Innovatielab",
+    clientUrl: "https://www.ik-db.nl/",
     year: 2025,
     semester: { nl: "najaar", en: "fall" },
     fields: ["Design", "ICT", "Engineering", "Business"],
