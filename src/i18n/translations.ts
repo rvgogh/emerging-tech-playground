@@ -308,6 +308,13 @@ export const translations = {
           en: "You're assessed on project work, presentations, and your portfolio — no exams or multiple choice. The focus is on your contribution to the team and personal growth.",
         },
       },
+      {
+        q: { nl: "Hoe is de verdeling van de 30 EC?", en: "How are the 30 ECTS distributed?" },
+        a: {
+          nl: "De minor bestaat uit drie onderdelen: het Multidisciplinair Project (18 EC), Professionele Houding (4 EC) en Keuzevakken (8 EC). Het project vormt de kern, aangevuld met persoonlijke ontwikkeling en verdiepende vakken naar keuze.",
+          en: "The minor consists of three parts: the Multidisciplinary Project (18 ECTS), Professional Attitude (4 ECTS), and Elective Courses (8 ECTS). The project is the core, complemented by personal development and elective specialization courses.",
+        },
+      },
     ],
   },
 } as const;
