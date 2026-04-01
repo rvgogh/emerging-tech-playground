@@ -34,14 +34,20 @@ const Hero = () => {
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="font-semibold text-base px-8" asChild>
-              <a href="#contact">{t(h.ctaPrimary)}</a>
+              <a
+                href="https://www.kiesopmaat.nl/modules/avans/ATD/140782/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {t(h.ctaEnroll)}
+              </a>
             </Button>
             <Button
               size="lg"
               className="border-2 border-white/40 bg-transparent text-white hover:bg-white/10 font-semibold text-base px-8"
               asChild
             >
-              <a href="#interessegebieden">{t(h.ctaSecondary)}</a>
+              <a href="#contact">{t(h.ctaPrimary)}</a>
             </Button>
           </div>
         </div>
