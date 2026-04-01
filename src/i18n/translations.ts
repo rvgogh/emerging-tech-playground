@@ -17,6 +17,7 @@ export const translations = {
       nl: "Vergeet de standaard minor-vakjes. In deze minor stap je uit je eigen wereld. Je wordt niet alleen beter in je vak, maar ontdekt vooral hoe jouw skills passen binnen multidisciplinaire context.",
       en: "Forget standard electives. In this minor you step outside your comfort zone. You don't just improve your own skills — you discover how they fit within a multidisciplinary context.",
     },
+    ctaEnroll: { nl: "Meld je aan", en: "Enroll now" },
     ctaPrimary: { nl: "Meer weten?", en: "Learn more?" },
     ctaSecondary: { nl: "Ontdek de interessegebieden", en: "Discover the focus areas" },
     imgAlt: { nl: "Studenten werken samen", en: "Students working together" },
