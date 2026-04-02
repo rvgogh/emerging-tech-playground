@@ -69,7 +69,7 @@ const FeaturedProjects = () => {
                     </Badge>
                   ))}
                 </div>
-                <h3 className="font-heading text-lg font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
+                <h3 className="font-heading text-lg font-bold text-foreground mb-2 transition-colors">
                   {project.title}
                 </h3>
                 <div className="flex items-center gap-4 text-muted-foreground text-sm mb-4">
