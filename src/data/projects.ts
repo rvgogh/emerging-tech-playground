@@ -8,6 +8,7 @@ export interface Project {
   semester: T;
   fields: string[];
   video?: string;
+  image?: string;
   context: T;
   problem: T;
   goals: T;
@@ -53,6 +54,7 @@ export const projects: Project[] = [
     title: "Or a c.l.e. - Streetcred",
     client: "Openbaring ruimte (Matthijs Bosman)",
     clientUrl: "https://www.openbaringruimte.nl/",
+    image: "/images/street-cred.png",
     year: 2025,
     semester: { nl: "najaar", en: "fall" },
     fields: ["Design", "ICT", "Engineering"],
