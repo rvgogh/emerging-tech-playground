@@ -159,6 +159,7 @@ const Projects = () => {
                       </div>
                     </div>
                   </details>
+                  </div>
                 </CardContent>
               </Card>
             ))}

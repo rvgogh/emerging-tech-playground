@@ -106,6 +106,7 @@ const FeaturedProjects = () => {
                     </div>
                   </div>
                 </details>
+                </div>
               </CardContent>
             </Card>
           ))}
