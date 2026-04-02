@@ -94,7 +94,7 @@ const Projects = () => {
                 className="border-0 shadow-lg hover:shadow-xl transition-all group"
               >
                 <CardContent className="p-0">
-                  {project.video && (
+                  {project.video ? (
                     <video
                       src={project.video}
                       autoPlay
@@ -103,7 +103,13 @@ const Projects = () => {
                       playsInline
                       className="w-full h-40 object-cover rounded-t-lg"
                     />
-                  )}
+                  ) : project.image ? (
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-40 object-cover rounded-t-lg"
+                    />
+                  ) : null}
                   <div className="p-6">
                   <div className="flex flex-wrap gap-1.5 mb-4">
                     {project.fields.map((f) => (
