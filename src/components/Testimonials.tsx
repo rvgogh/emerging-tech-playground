@@ -165,40 +165,7 @@ const Testimonials = () => {
           {/* Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {visibleReviews.map((review, i) => (
-              <Card
-                key={`${current}-${i}`}
-                className="border-0 shadow-lg hover:shadow-xl transition-all duration-500 animate-fade-in"
-              >
-                <CardContent className="p-8">
-                  <div className="flex items-center justify-between mb-4">
-                    <div className="flex gap-0.5">
-                      {Array.from({ length: 5 }).map((_, j) => (
-                        <Star
-                          key={j}
-                          size={16}
-                          className={
-                            j < review.stars
-                              ? "fill-yellow-400 text-yellow-400"
-                              : "text-muted-foreground/30"
-                          }
-                        />
-                      ))}
-                    </div>
-                    <Quote size={20} className="text-primary/20" />
-                  </div>
-                  <p className="text-foreground leading-relaxed mb-6 text-sm line-clamp-4">
-                    "{t(review.quote)}"
-                  </p>
-                  <div className="border-t pt-4">
-                    <p className="font-heading font-bold text-foreground text-sm">
-                      {review.name}
-                    </p>
-                    <p className="text-muted-foreground text-xs">
-                      {t(review.study)} · {t(review.country)}
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
+              <ReviewCard key={`${current}-${i}`} review={review} t={t} />
             ))}
           </div>
 
