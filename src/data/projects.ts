@@ -186,6 +186,7 @@ export const projects: Project[] = [
     title: "BESS Subsystems",
     client: "TE Connectivity",
     clientUrl: "https://www.te.com/",
+    image: "/images/te-connectivity.jpg",
     year: 2025,
     semester: { nl: "najaar", en: "fall" },
     fields: ["Engineering", "Business"],
