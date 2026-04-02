@@ -40,7 +40,18 @@ const FeaturedProjects = () => {
               key={project.title}
               className="border-0 shadow-lg hover:shadow-xl transition-all group"
             >
-              <CardContent className="p-6">
+              <CardContent className="p-0">
+                {project.video && (
+                  <video
+                    src={project.video}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-full h-40 object-cover rounded-t-lg"
+                  />
+                )}
+                <div className="p-6">
                 <div className="flex flex-wrap gap-1.5 mb-4">
                   {project.fields.map((field) => (
                     <Badge
