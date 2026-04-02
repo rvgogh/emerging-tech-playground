@@ -120,6 +120,7 @@ export const projects: Project[] = [
     year: 2025,
     semester: { nl: "najaar", en: "fall" },
     fields: ["Design", "ICT", "Engineering", "Business"],
+    video: "/videos/ai-against-litter.mp4",
     context: {
       nl: "Zwerfafval in de openbare ruimte is een aanhoudend probleem. Vrijwilligers ervaren moeilijkheden zoals gebrek aan motivatie en handmatige afvalregistratie. Gemeenten missen gestructureerde data over zwerfafvalpatronen.",
       en: "Litter in public spaces is an ongoing problem. Volunteers face difficulties such as lack of motivation and manual waste registration. Municipalities lack structured data about litter patterns.",
