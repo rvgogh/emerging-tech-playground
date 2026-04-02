@@ -94,6 +94,10 @@
     @apply border-border;
   }
 
+  summary {
+    text-decoration: none !important;
+  }
+
   body {
     @apply bg-background text-foreground font-sans;
   }
