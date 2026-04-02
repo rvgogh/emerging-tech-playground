@@ -7,6 +7,7 @@ export interface Project {
   year: number;
   semester: T;
   fields: string[];
+  video?: string;
   context: T;
   problem: T;
   goals: T;
