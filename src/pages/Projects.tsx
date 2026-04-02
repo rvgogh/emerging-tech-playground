@@ -140,11 +140,11 @@ const Projects = () => {
                     </span>
                   </div>
                   <details className="group/details">
-                    <summary className="text-primary text-sm font-medium cursor-pointer hover:underline mb-4 list-none [&::-webkit-details-marker]:hidden">
+                    <summary className="text-primary text-sm font-medium cursor-pointer mb-4 list-none [&::-webkit-details-marker]:hidden [&::marker]:hidden [text-decoration:none]">
                       <p className="text-muted-foreground text-sm leading-relaxed line-clamp-3 mb-2 group-open/details:line-clamp-none">
                         {t(project.context)}
                       </p>
-                      <span className="text-primary text-sm font-medium group-open/details:hidden">{t(pt.readMore)}</span>
+                      <span className="text-primary text-sm font-medium hover:underline group-open/details:hidden">{t(pt.readMore)}</span>
                     </summary>
                     <div className="mt-2 space-y-3 text-sm text-muted-foreground animate-fade-in">
                       <div>

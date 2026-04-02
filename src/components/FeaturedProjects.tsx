@@ -87,8 +87,8 @@ const FeaturedProjects = () => {
                   </span>
                 </div>
                 <details className="group/details">
-                  <summary className="text-primary text-sm font-medium cursor-pointer hover:underline mb-4 list-none [&::-webkit-details-marker]:hidden">
-                    <p className="text-muted-foreground text-sm leading-relaxed line-clamp-3 mb-2 group-open/details:line-clamp-none">
+                  <summary className="text-primary text-sm font-medium cursor-pointer hover:underline mb-4 list-none [&::-webkit-details-marker]:hidden [&::marker]:hidden no-underline [text-decoration:none]">
+                    <p className="text-muted-foreground text-sm leading-relaxed line-clamp-3 mb-2 group-open/details:line-clamp-none no-underline">
                       {t(project.context)}
                     </p>
                     <span className="text-primary text-sm font-medium group-open/details:hidden">{t(pt.readMore)}</span>
