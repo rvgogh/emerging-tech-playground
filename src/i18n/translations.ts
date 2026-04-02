@@ -14,8 +14,8 @@ export const translations = {
     title2: { nl: ", Engineering, ", en: ", Engineering, " },
     title3: { nl: " & Business.", en: " & Business." },
     subtitle: {
-      nl: "Vergeet de standaard minor-vakjes. In deze minor stap je uit je eigen wereld. Je wordt niet alleen beter in je vak, maar ontdekt vooral hoe jouw skills passen binnen multidisciplinaire context.",
-      en: "Forget standard electives. In this minor you step outside your comfort zone. You don't just improve your own skills — you discover how they fit within a multidisciplinary context.",
+      nl: "Vergeet de standaard minor-vakjes. In deze minor stap je uit je eigen wereld. Je wordt niet alleen beter in je vak, maar ontdekt vooral hoe jouw skills tot volledige bloei komen als je deze combineert met andere.",
+      en: "Forget standard electives. In this minor you step outside your comfort zone. You don't just improve your own skills — you discover how they truly flourish when you combine them with others.",
     },
     ctaEnroll: { nl: "Meld je aan", en: "Enroll now" },
     ctaPrimary: { nl: "Meer weten?", en: "Learn more?" },
