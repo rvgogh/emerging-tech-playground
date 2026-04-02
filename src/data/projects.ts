@@ -152,6 +152,7 @@ export const projects: Project[] = [
     year: 2025,
     semester: { nl: "najaar", en: "fall" },
     fields: ["Design", "ICT", "Engineering"],
+    video: "/videos/interactive-light-object.mp4",
     context: {
       nl: "Het Innovatie Kwartier Den Bosch wil technologie, creativiteit en ondernemerschap combineren. Er is behoefte om de innovatieve identiteit van het gebied zichtbaarder te maken voor bewoners en bezoekers.",
       en: "The Innovatie Kwartier Den Bosch aims to combine technology, creativity, and entrepreneurship. There is a need to make the area's innovative identity more visible to residents and visitors.",
