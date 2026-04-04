@@ -2,7 +2,7 @@ export type Lang = "nl" | "en";
 
 export const translations = {
   nav: {
-    interests: { nl: "Interessegebieden", en: "Focus Areas" },
+    interests: { nl: "Disciplines", en: "Disciplines" },
     why: { nl: "Waarom deze minor?", en: "Why This Minor?" },
     practical: { nl: "Praktisch", en: "Practical Info" },
     experiences: { nl: "Ervaringen", en: "Experiences" },
@@ -19,12 +19,12 @@ export const translations = {
     },
     ctaEnroll: { nl: "Meld je aan", en: "Enroll now" },
     ctaPrimary: { nl: "Meer weten?", en: "Learn more?" },
-    ctaSecondary: { nl: "Ontdek de interessegebieden", en: "Discover the focus areas" },
+    ctaSecondary: { nl: "Ontdek de disciplines", en: "Discover the disciplines" },
     imgAlt: { nl: "Studenten werken samen", en: "Students working together" },
     scrollLabel: { nl: "Scroll naar beneden", en: "Scroll down" },
   },
   pillars: {
-    heading: { nl: "De Vier Interessegebieden", en: "Four Focus Areas" },
+    heading: { nl: "De Vier Disciplines", en: "Four Disciplines" },
     sub: {
       nl: "In deze minor leer je samenwerken op het snijvlak van vier werelden",
       en: "In this minor you learn to collaborate at the intersection of four worlds",
@@ -193,7 +193,7 @@ export const translations = {
     goalsLabel: { nl: "Doelen", en: "Goals" },
     resultsLabel: { nl: "Resultaten", en: "Results" },
     conclusionLabel: { nl: "Conclusie", en: "Conclusion" },
-    noResults: { nl: "Geen projecten gevonden voor dit interessegebied.", en: "No projects found for this focus area." },
+    noResults: { nl: "Geen projecten gevonden voor deze discipline.", en: "No projects found for this discipline." },
   },
   nav2: {
     projects: { nl: "Projecten", en: "Projects" },

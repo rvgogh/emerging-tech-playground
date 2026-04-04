@@ -54,7 +54,7 @@ const Hero = () => {
       </div>
 
       <a
-        href="#interessegebieden"
+        href="#disciplines"
         className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/60 animate-bounce"
         aria-label={t(h.scrollLabel)}
       >
