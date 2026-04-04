@@ -2,7 +2,7 @@ export type Lang = "nl" | "en";
 
 export const translations = {
   nav: {
-    interests: { nl: "Interessegebieden", en: "Focus Areas" },
+    interests: { nl: "Disciplines", en: "Disciplines" },
     why: { nl: "Waarom deze minor?", en: "Why This Minor?" },
     practical: { nl: "Praktisch", en: "Practical Info" },
     experiences: { nl: "Ervaringen", en: "Experiences" },
