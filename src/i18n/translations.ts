@@ -312,8 +312,8 @@ export const translations = {
       {
         title: { nl: "Iteratie 3 — Bouwen & Testen", en: "Iteration 3 — Build & Test" },
         description: {
-          nl: "Je bouwt een werkend prototype en test dit intensief. Je itereert op basis van feedback van gebruikers en de opdrachtgever.",
-          en: "You build a working prototype and test it intensively. You iterate based on feedback from users and the client.",
+          nl: "Je bouwt een werkend prototype en test dit intensief. Feedback van de expo neem je direct mee naar de volgende sprint.",
+          en: "You build a working prototype and test it intensively. Feedback from the expo feeds directly into the next sprint.",
         },
         duration: { nl: "Week 11–14", en: "Week 11–14" },
       },
