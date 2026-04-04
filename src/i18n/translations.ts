@@ -112,8 +112,8 @@ export const translations = {
       {
         label: { nl: "Toelating", en: "Admission" },
         value: {
-          nl: "3e jaars studenten techniek, design of innovatie",
-          en: "3rd year students in technology, design or innovation",
+          nl: "3e jaars studenten techniek, design of innovatie, of op basis van motivatiegesprek",
+          en: "3rd year students in technology, design or innovation, or based on a motivation interview",
         },
       },
       {
@@ -340,8 +340,8 @@ export const translations = {
       {
         q: { nl: "Kan ik meedoen vanuit elke opleiding?", en: "Can I join from any study program?" },
         a: {
-          nl: "De minor staat open voor 3e jaars HBO-studenten met een technische, design- of innovatiegerichte opleiding. Denk aan opleidingen als ICT, CMD, Business Innovation, Industrial Design, Technische Bedrijfskunde, Werktuigbouwkunde, Elektrotechniek of vergelijkbaar.",
-          en: "The minor is open to 3rd year university of applied sciences students in technology, design, or innovation programs. Think of programs like ICT, Interaction Design, Business Innovation, Industrial Design, Industrial Engineering, Mechanical Engineering, Electrical Engineering, or similar.",
+          nl: "De minor staat open voor 3e jaars HBO-studenten met een technische, design- of innovatiegerichte opleiding. Denk aan opleidingen als ICT, CMD, Business Innovation, Industrial Design, Technische Bedrijfskunde, Werktuigbouwkunde, Elektrotechniek, Mens en Techniek of vergelijkbaar.",
+          en: "The minor is open to 3rd year university of applied sciences students in technology, design, or innovation programs. Think of programs like ICT, Interaction Design, Business Innovation, Industrial Design, Industrial Engineering, Mechanical Engineering, Electrical Engineering, People and Technology, or similar.",
         },
       },
       {
