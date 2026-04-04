@@ -288,8 +288,8 @@ export const translations = {
       {
         title: { nl: "Onboarding", en: "Onboarding" },
         description: {
-          nl: "Je maakt kennis met je team, de opdrachtgever en de werkwijze. Je volgt introductie-workshops en bereidt je voor op het project.",
-          en: "You get to know your team, the client and the way of working. You attend introductory workshops and prepare for the project.",
+          nl: "Je maakt kennis met je team, de opdrachtgever en de werkwijze. Een gezamenlijke kick-off op school zet de toon voor het semester.",
+          en: "You get to know your team, the client and the way of working. A joint kick-off at school sets the tone for the semester.",
         },
         duration: { nl: "Week 1–2", en: "Week 1–2" },
       },
