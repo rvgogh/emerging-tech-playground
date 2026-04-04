@@ -304,8 +304,8 @@ export const translations = {
       {
         title: { nl: "Iteratie 2 — Ideeën & Concepten", en: "Iteration 2 — Ideate & Concept" },
         description: {
-          nl: "Op basis van je inzichten genereer je ideeën en werk je deze uit tot concrete concepten. Je maakt eerste prototypes en test ze met gebruikers.",
-          en: "Based on your insights you generate ideas and develop them into concrete concepts. You create first prototypes and test them with users.",
+          nl: "Je genereert ideeën en werkt ze uit tot concepten en eerste prototypes. Elke iteratie start met een kick-off en eindigt met een expo — geen saaie verslagen, maar een festival van innovatie.",
+          en: "You generate ideas and develop them into concepts and first prototypes. Each iteration starts with a kick-off and ends with an expo — not boring reports, but a festival of innovation.",
         },
         duration: { nl: "Week 7–10", en: "Week 7–10" },
       },
