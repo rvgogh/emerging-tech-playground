@@ -102,14 +102,6 @@ export const translations = {
       { label: { nl: "Periode", en: "Period" }, value: { nl: "Voor- en najaar", en: "Spring & Fall" } },
       { label: { nl: "Vorm", en: "Format" }, value: { nl: "Voltijd", en: "Full-time" } },
       {
-        label: { nl: "Locatie", en: "Location" },
-        value: {
-          nl: "Op locatie bij een bedrijf of organisatie",
-          en: "On-site at a company or organisation",
-        },
-        sub: { nl: "Zie projecten voor meer info", en: "See projects for more info" },
-      },
-      {
         label: { nl: "Toelating", en: "Admission" },
         value: {
           nl: "3e jaars studenten techniek, design of innovatie, of op basis van motivatiegesprek",
@@ -128,6 +120,30 @@ export const translations = {
         },
       },
     ],
+    locations: {
+      heading: { nl: "Waar werk je?", en: "Where do you work?" },
+      lab: {
+        title: { nl: "Innovatielab", en: "Innovation Lab" },
+        description: {
+          nl: "Onze hybride playground. Een inspirerende omgeving waar je zij aan zij werkt met andere teams en experimenteert met de nieuwste hardware en software.",
+          en: "Our hybrid playground. An inspiring environment where you work side by side with other teams and experiment with the latest hardware and software.",
+        },
+      },
+      client: {
+        title: { nl: "Bij de Opdrachtgever", en: "At the Client" },
+        description: {
+          nl: "Je draait mee in de dynamiek van een echt bedrijf en krijgt een kijkje in de keuken bij innovatieve organisaties.",
+          en: "You work within the dynamics of a real company and get an inside look at innovative organisations.",
+        },
+      },
+    },
+    weekOverview: {
+      heading: { nl: "Een week in de ETP", en: "A week at ETP" },
+      weekdays: { nl: "Ma – Do", en: "Mon – Thu" },
+      weekdaysDesc: { nl: "Projectlocatie (Lab of Bedrijf)", en: "Project location (Lab or Client)" },
+      friday: { nl: "Vrijdag", en: "Friday" },
+      fridayDesc: { nl: "Wisselend: zelfstudie, expo of kick-off", en: "Alternating: self-study, expo or kick-off" },
+    },
   },
   testimonials: {
     label: { nl: "Ervaringen", en: "Experiences" },
