@@ -24,7 +24,7 @@ export const translations = {
     scrollLabel: { nl: "Scroll naar beneden", en: "Scroll down" },
   },
   pillars: {
-    heading: { nl: "De Vier Interessegebieden", en: "Four Focus Areas" },
+    heading: { nl: "De Vier Disciplines", en: "Four Disciplines" },
     sub: {
       nl: "In deze minor leer je samenwerken op het snijvlak van vier werelden",
       en: "In this minor you learn to collaborate at the intersection of four worlds",
