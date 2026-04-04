@@ -296,8 +296,8 @@ export const translations = {
       {
         title: { nl: "Iteratie 1 — Ontdekken", en: "Iteration 1 — Discover" },
         description: {
-          nl: "Je duikt in de opdracht, leert de opdrachtgever kennen en brengt het probleem in kaart. Je voert deskresearch uit, interviewt stakeholders en formuleert de kern van de vraag.",
-          en: "You dive into the assignment, get to know the client and map out the problem. You conduct desk research, interview stakeholders and formulate the core question.",
+          nl: "Je duikt in de opdracht en brengt het probleem in kaart. Start met een kick-off, eindig met een expo waar je je inzichten deelt en directe feedback krijgt.",
+          en: "You dive into the assignment and map out the problem. Start with a kick-off, end with an expo where you share insights and get direct feedback.",
         },
         duration: { nl: "Week 3–6", en: "Week 3–6" },
       },
