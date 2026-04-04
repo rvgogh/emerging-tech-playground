@@ -19,7 +19,7 @@ export const translations = {
     },
     ctaEnroll: { nl: "Meld je aan", en: "Enroll now" },
     ctaPrimary: { nl: "Meer weten?", en: "Learn more?" },
-    ctaSecondary: { nl: "Ontdek de interessegebieden", en: "Discover the focus areas" },
+    ctaSecondary: { nl: "Ontdek de disciplines", en: "Discover the disciplines" },
     imgAlt: { nl: "Studenten werken samen", en: "Students working together" },
     scrollLabel: { nl: "Scroll naar beneden", en: "Scroll down" },
   },
