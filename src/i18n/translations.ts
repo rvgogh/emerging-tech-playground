@@ -54,8 +54,8 @@ export const translations = {
       {
         title: { nl: "Business", en: "Business" },
         description: {
-          nl: "Begeleid de innovatieve ideeën naar haalbare en realistische producten. Stel de business case op, ontwerp business modellen en pitch je startup.",
-          en: "Guide innovative ideas towards feasible and realistic products. Build the business case, design business models and pitch your startup.",
+          nl: "Sla de brug tussen techniek en markt. Transformeer prototypes in levensvatbare businessmodellen en overtuig stakeholders met een ijzersterke pitch.",
+          en: "Bridge the gap between technology and market. Transform prototypes into viable business models and convince stakeholders with a rock-solid pitch.",
         },
       },
     ],
