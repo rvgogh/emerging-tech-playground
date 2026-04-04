@@ -112,8 +112,8 @@ export const translations = {
       {
         label: { nl: "Toelating", en: "Admission" },
         value: {
-          nl: "3e jaars studenten techniek, design of innovatie",
-          en: "3rd year students in technology, design or innovation",
+          nl: "3e jaars studenten techniek, design of innovatie, of op basis van motivatiegesprek",
+          en: "3rd year students in technology, design or innovation, or based on a motivation interview",
         },
       },
       {
