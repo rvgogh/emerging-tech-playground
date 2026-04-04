@@ -13,7 +13,7 @@ const Navbar = () => {
   const { t } = useLanguage();
 
   const navLinks = [
-    { label: t(translations.nav.interests), href: "#interessegebieden" },
+    { label: t(translations.nav.interests), href: "#disciplines" },
     { label: t(translations.nav2.projects), href: "/projecten", isRoute: true },
     { label: t(translations.nav.why), href: "#waarom" },
     { label: t(translations.nav.practical), href: "#praktisch" },

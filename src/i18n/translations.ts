@@ -193,7 +193,7 @@ export const translations = {
     goalsLabel: { nl: "Doelen", en: "Goals" },
     resultsLabel: { nl: "Resultaten", en: "Results" },
     conclusionLabel: { nl: "Conclusie", en: "Conclusion" },
-    noResults: { nl: "Geen projecten gevonden voor dit interessegebied.", en: "No projects found for this focus area." },
+    noResults: { nl: "Geen projecten gevonden voor deze discipline.", en: "No projects found for this discipline." },
   },
   nav2: {
     projects: { nl: "Projecten", en: "Projects" },
