@@ -102,14 +102,6 @@ export const translations = {
       { label: { nl: "Periode", en: "Period" }, value: { nl: "Voor- en najaar", en: "Spring & Fall" } },
       { label: { nl: "Vorm", en: "Format" }, value: { nl: "Voltijd", en: "Full-time" } },
       {
-        label: { nl: "Locatie", en: "Location" },
-        value: {
-          nl: "Op locatie bij een bedrijf of organisatie",
-          en: "On-site at a company or organisation",
-        },
-        sub: { nl: "Zie projecten voor meer info", en: "See projects for more info" },
-      },
-      {
         label: { nl: "Toelating", en: "Admission" },
         value: {
           nl: "3e jaars studenten techniek, design of innovatie, of op basis van motivatiegesprek",
@@ -128,6 +120,30 @@ export const translations = {
         },
       },
     ],
+    locations: {
+      heading: { nl: "Waar werk je?", en: "Where do you work?" },
+      lab: {
+        title: { nl: "Innovatielab", en: "Innovation Lab" },
+        description: {
+          nl: "Onze hybride playground. Een inspirerende omgeving waar je zij aan zij werkt met andere teams en experimenteert met de nieuwste hardware en software.",
+          en: "Our hybrid playground. An inspiring environment where you work side by side with other teams and experiment with the latest hardware and software.",
+        },
+      },
+      client: {
+        title: { nl: "Bij de Opdrachtgever", en: "At the Client" },
+        description: {
+          nl: "Je draait mee in de dynamiek van een echt bedrijf en krijgt een kijkje in de keuken bij innovatieve organisaties.",
+          en: "You work within the dynamics of a real company and get an inside look at innovative organisations.",
+        },
+      },
+    },
+    weekOverview: {
+      heading: { nl: "Een week in de ETP", en: "A week at ETP" },
+      weekdays: { nl: "Ma – Do", en: "Mon – Thu" },
+      weekdaysDesc: { nl: "Projectlocatie (Lab of Bedrijf)", en: "Project location (Lab or Client)" },
+      friday: { nl: "Vrijdag", en: "Friday" },
+      fridayDesc: { nl: "Wisselend: zelfstudie, expo of kick-off", en: "Alternating: self-study, expo or kick-off" },
+    },
   },
   testimonials: {
     label: { nl: "Ervaringen", en: "Experiences" },
@@ -272,32 +288,32 @@ export const translations = {
       {
         title: { nl: "Onboarding", en: "Onboarding" },
         description: {
-          nl: "Je maakt kennis met je team, de opdrachtgever en de werkwijze. Je volgt introductie-workshops en bereidt je voor op het project.",
-          en: "You get to know your team, the client and the way of working. You attend introductory workshops and prepare for the project.",
+          nl: "Je maakt kennis met je team, de opdrachtgever en de werkwijze. Een gezamenlijke kick-off op school zet de toon voor het semester.",
+          en: "You get to know your team, the client and the way of working. A joint kick-off at school sets the tone for the semester.",
         },
         duration: { nl: "Week 1–2", en: "Week 1–2" },
       },
       {
         title: { nl: "Iteratie 1 — Ontdekken", en: "Iteration 1 — Discover" },
         description: {
-          nl: "Je duikt in de opdracht, leert de opdrachtgever kennen en brengt het probleem in kaart. Je voert deskresearch uit, interviewt stakeholders en formuleert de kern van de vraag.",
-          en: "You dive into the assignment, get to know the client and map out the problem. You conduct desk research, interview stakeholders and formulate the core question.",
+          nl: "Je duikt in de opdracht en brengt het probleem in kaart. Start met een kick-off, eindig met een expo waar je je inzichten deelt en directe feedback krijgt.",
+          en: "You dive into the assignment and map out the problem. Start with a kick-off, end with an expo where you share insights and get direct feedback.",
         },
         duration: { nl: "Week 3–6", en: "Week 3–6" },
       },
       {
         title: { nl: "Iteratie 2 — Ideeën & Concepten", en: "Iteration 2 — Ideate & Concept" },
         description: {
-          nl: "Op basis van je inzichten genereer je ideeën en werk je deze uit tot concrete concepten. Je maakt eerste prototypes en test ze met gebruikers.",
-          en: "Based on your insights you generate ideas and develop them into concrete concepts. You create first prototypes and test them with users.",
+          nl: "Je genereert ideeën en werkt ze uit tot concepten en eerste prototypes. Elke iteratie start met een kick-off en eindigt met een expo — geen saaie verslagen, maar een festival van innovatie.",
+          en: "You generate ideas and develop them into concepts and first prototypes. Each iteration starts with a kick-off and ends with an expo — not boring reports, but a festival of innovation.",
         },
         duration: { nl: "Week 7–10", en: "Week 7–10" },
       },
       {
         title: { nl: "Iteratie 3 — Bouwen & Testen", en: "Iteration 3 — Build & Test" },
         description: {
-          nl: "Je bouwt een werkend prototype en test dit intensief. Je itereert op basis van feedback van gebruikers en de opdrachtgever.",
-          en: "You build a working prototype and test it intensively. You iterate based on feedback from users and the client.",
+          nl: "Je bouwt een werkend prototype en test dit intensief. Feedback van de expo neem je direct mee naar de volgende sprint.",
+          en: "You build a working prototype and test it intensively. Feedback from the expo feeds directly into the next sprint.",
         },
         duration: { nl: "Week 11–14", en: "Week 11–14" },
       },
