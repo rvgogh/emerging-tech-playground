@@ -33,8 +33,8 @@ export const translations = {
       {
         title: { nl: "ICT", en: "ICT" },
         description: {
-          nl: "Zet AI in om data-gedreven apps te bouwen met conversational interfaces. Leer ook de basis van cybersecurity.",
-          en: "Use AI to build data-driven apps with conversational interfaces. Also learn the basics of cybersecurity.",
+          nl: "Zet AI in om data-gedreven apps te bouwen met conversational interfaces. Daarbij pas je de principes van cybersecurity direct toe in je projecten.",
+          en: "Use AI to build data-driven apps with conversational interfaces. You apply cybersecurity principles directly in your projects.",
         },
       },
       {
