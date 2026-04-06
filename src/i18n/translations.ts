@@ -281,8 +281,8 @@ export const translations = {
     label: { nl: "Werkwijze", en: "Our Process" },
     heading: { nl: "Hoe werken we?", en: "How do we work?" },
     sub: {
-      nl: "In 20 weken doorloop je een volledig traject: van onboarding en kennismaking tot oplevering en overdracht, met daartussen 4 intensieve iteraties.",
-      en: "In 20 weeks you go through a complete trajectory: from onboarding and introduction to delivery and handover, with 4 intensive iterations in between.",
+      nl: "In 20 weken doorloop je een volledig traject: van onboarding en kennismaking tot oplevering en overdracht, met daartussen 4 intensieve iteraties. Elke iteratie start met een gezamenlijke kick-off en eindigt met een expo waar je je werk presenteert.",
+      en: "In 20 weeks you go through a complete trajectory: from onboarding and introduction to delivery and handover, with 4 intensive iterations in between. Each iteration starts with a joint kick-off and ends with an expo where you present your work.",
     },
     iterations: [
       {
