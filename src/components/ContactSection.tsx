@@ -149,7 +149,7 @@ const ContactSection = () => {
                   )}
                 />
 
-                <Button type="submit" size="lg" className="w-full font-semibold">
+                <Button type="submit" variant="secondary" size="lg" className="w-full font-semibold">
                   {t(c.submit)}
                 </Button>
               </form>
