@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { translations } from "@/i18n/translations";
