@@ -101,13 +101,13 @@ const Projects = () => {
                       loop
                       muted
                       playsInline
-                      className="w-full h-40 object-cover rounded-t-lg"
+                      className="w-full h-56 object-cover rounded-t-lg"
                     />
                   ) : project.image ? (
                     <img
                       src={project.image}
                       alt={project.title}
-                      className="w-full h-40 object-cover rounded-t-lg"
+                      className="w-full h-56 object-cover rounded-t-lg"
                     />
                   ) : null}
                   <div className="p-6">
