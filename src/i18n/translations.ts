@@ -6,7 +6,7 @@ export const translations = {
     why: { nl: "Waarom deze minor?", en: "Why This Minor?" },
     practical: { nl: "Praktisch", en: "Practical Info" },
     experiences: { nl: "Ervaringen", en: "Experiences" },
-    cta: { nl: "Meer weten?", en: "Learn more?" },
+    cta: { nl: "Stel je vraag", en: "Ask your question" },
     contact: { nl: "Contact", en: "Contact" },
   },
   hero: {
