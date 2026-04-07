@@ -151,6 +151,7 @@ export const translations = {
           nl: "Je draait mee in de dynamiek van een echt bedrijf en krijgt een kijkje in de keuken bij innovatieve organisaties.",
           en: "You work within the dynamics of a real company and get an inside look at innovative organisations.",
         },
+        linkLabel: { nl: "Locatie afhankelijk van bedrijf", en: "Location depends on the company" },
       },
     },
     weekOverview: {
