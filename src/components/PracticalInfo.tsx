@@ -1,4 +1,4 @@
-import { GraduationCap, CalendarDays, Clock, UserCheck, Globe, MapPin, FlaskConical, Building2, Calendar } from "lucide-react";
+import { GraduationCap, CalendarDays, Clock, UserCheck, Globe, MapPin, FlaskConical, Building2, Calendar, ExternalLink } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { translations } from "@/i18n/translations";
 
@@ -65,6 +65,15 @@ const PracticalInfo = () => {
               <p className="text-muted-foreground text-sm leading-relaxed">
                 {t(p.locations.lab.description)}
               </p>
+              <a
+                href="https://www.ik-db.nl/ikdb-innovatielab/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-primary text-sm font-medium mt-3 hover:underline"
+              >
+                {t(p.locations.lab.linkLabel)}
+                <ExternalLink size={14} />
+              </a>
             </div>
             <div className="p-6 rounded-2xl bg-secondary border border-border">
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
