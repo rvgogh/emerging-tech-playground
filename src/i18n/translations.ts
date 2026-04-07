@@ -140,16 +140,16 @@ export const translations = {
       lab: {
         title: { nl: "Innovatielab", en: "Innovation Lab" },
         description: {
-          nl: "Onze hybride playground. Een inspirerende omgeving waar je zij aan zij werkt met andere teams en experimenteert met de nieuwste hardware en software.",
-          en: "Our hybrid playground. An inspiring environment where you work side by side with other teams and experiment with the latest hardware and software.",
+          nl: "Onze hybride playground in het Innovatiekwartier 's-Hertogenbosch. Een inspirerende omgeving waar je zij aan zij werkt met andere teams en experimenteert met de nieuwste hardware en software.",
+          en: "Our hybrid playground in the Innovation Quarter of 's-Hertogenbosch. An inspiring environment where you work side by side with other teams and experiment with the latest hardware and software.",
         },
         linkLabel: { nl: "Bekijk het Innovatielab", en: "Visit the Innovation Lab" },
       },
       client: {
         title: { nl: "Bij de Opdrachtgever", en: "At the Client" },
         description: {
-          nl: "Je draait mee in de dynamiek van een echt bedrijf en krijgt een kijkje in de keuken bij innovatieve organisaties.",
-          en: "You work within the dynamics of a real company and get an inside look at innovative organisations.",
+          nl: "Je draait mee in de dynamiek van een echt bedrijf in de regio 's-Hertogenbosch en krijgt een kijkje in de keuken bij innovatieve organisaties.",
+          en: "You work within the dynamics of a real company in the 's-Hertogenbosch region and get an inside look at innovative organisations.",
         },
         linkLabel: { nl: "Locatie afhankelijk van bedrijf", en: "Location depends on the company" },
       },
