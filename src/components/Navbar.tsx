@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import LanguageSelector from "@/components/LanguageSelector";
@@ -11,6 +11,11 @@ import logo from "@/assets/ETP_logo_transparant.png";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const { t } = useLanguage();
+  const location = useLocation();
+  const isHome = location.pathname === "/";
+
+  const resolveHref = (href: string) =>
+    href.startsWith("#") && !isHome ? `/${href}` : href;
 
   const navLinks = [
     { label: t(translations.nav.interests), href: "#disciplines" },
@@ -32,7 +37,7 @@ const Navbar = () => {
           {navLinks.map((l) => (
               <a
                 key={l.href}
-                href={l.href}
+                href={resolveHref(l.href)}
                 className="text-sm font-medium text-foreground/70 hover:text-primary transition-colors"
               >
                 {l.label}
@@ -50,7 +55,7 @@ const Navbar = () => {
             </a>
           </Button>
           <Button variant="outline" asChild>
-            <a href="#contact">{t(translations.nav.cta)}</a>
+            <a href={resolveHref("#contact")}>{t(translations.nav.cta)}</a>
           </Button>
         </div>
 
@@ -74,7 +79,7 @@ const Navbar = () => {
           {navLinks.map((l) => (
               <a
                 key={l.href}
-                href={l.href}
+                href={resolveHref(l.href)}
                 onClick={() => setOpen(false)}
                 className="block py-2 text-sm font-medium text-foreground/70 hover:text-primary transition-colors"
               >
@@ -92,7 +97,7 @@ const Navbar = () => {
             </a>
           </Button>
           <Button variant="outline" className="w-full" asChild>
-            <a href="#contact" onClick={() => setOpen(false)}>
+            <a href={resolveHref("#contact")} onClick={() => setOpen(false)}>
               {t(translations.nav.cta)}
             </a>
           </Button>
