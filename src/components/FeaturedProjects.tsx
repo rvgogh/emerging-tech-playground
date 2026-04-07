@@ -22,7 +22,7 @@ const FeaturedProjects = () => {
   const pt = translations.projects;
 
   return (
-    <section className="py-16 lg:py-20 bg-secondary">
+    <section id="projecten" className="py-16 lg:py-20 bg-secondary">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-2xl mx-auto mb-12">
           <span className="text-primary font-semibold text-sm uppercase tracking-widest">
