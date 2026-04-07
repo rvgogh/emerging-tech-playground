@@ -82,26 +82,28 @@ const ContactSection = () => {
             </p>
 
             {/* Contact person */}
-            <div className="mt-8 flex items-center gap-4 bg-white/5 rounded-xl p-4 border border-white/10">
-              <img
-                src={rolandImg}
-                alt={cp.name}
-                className="w-16 h-16 rounded-full object-cover"
-              />
-              <div>
-                <p className="text-white font-bold">{cp.name}</p>
-                <p className="text-white/60 text-sm">{t(cp.role)}</p>
-                <Button asChild size="sm" className="mt-2">
-                  <a
-                    href={getTeamsLink()}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <MessageSquare size={14} className="mr-1.5" />
-                    {t(cp.cta)}
-                  </a>
-                </Button>
+            <div className="mt-8 flex items-center justify-between gap-4 bg-white/5 rounded-xl p-4 border border-white/10">
+              <div className="flex items-center gap-4">
+                <img
+                  src={rolandImg}
+                  alt={cp.name}
+                  className="w-16 h-16 rounded-full object-cover shrink-0"
+                />
+                <div>
+                  <p className="text-white font-bold">{cp.name}</p>
+                  <p className="text-white/60 text-sm">{t(cp.role)}</p>
+                </div>
               </div>
+              <Button asChild size="sm" className="shrink-0">
+                <a
+                  href={getTeamsLink()}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <MessageSquare size={14} className="mr-1.5" />
+                  {t(cp.cta)}
+                </a>
+              </Button>
             </div>
           </div>
 
