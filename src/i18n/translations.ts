@@ -6,7 +6,7 @@ export const translations = {
     why: { nl: "Waarom deze minor?", en: "Why This Minor?" },
     practical: { nl: "Praktisch", en: "Practical Info" },
     experiences: { nl: "Ervaringen", en: "Experiences" },
-    cta: { nl: "Meer weten?", en: "Learn more?" },
+    cta: { nl: "Stel je vraag", en: "Ask your question" },
     contact: { nl: "Contact", en: "Contact" },
   },
   hero: {
@@ -18,7 +18,7 @@ export const translations = {
       en: "Forget standard electives. In this minor you step outside your comfort zone. You don't just grow in your own field — you discover what happens when you combine your talent with others.",
     },
     ctaEnroll: { nl: "Meld je aan", en: "Enroll now" },
-    ctaPrimary: { nl: "Meer weten?", en: "Learn more?" },
+    ctaPrimary: { nl: "Stel je vraag", en: "Ask your question" },
     ctaSecondary: { nl: "Ontdek de disciplines", en: "Discover the disciplines" },
     imgAlt: { nl: "Studenten werken samen", en: "Students working together" },
     scrollLabel: { nl: "Scroll naar beneden", en: "Scroll down" },
