@@ -115,8 +115,8 @@ export const translations = {
       {
         label: { nl: "Internationaal", en: "International" },
         value: {
-          nl: "Engels als voertaal, internationaal gezelschap",
-          en: "English as working language, international cohort",
+          nl: "Internationaal gezelschap, Engels als voertaal",
+          en: "International cohort, English as working language",
         },
         sub: {
           nl: "Erasmus-studenten welkom · Toetsing voor NL-studenten in het Nederlands",
