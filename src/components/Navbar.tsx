@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import LanguageSelector from "@/components/LanguageSelector";
 import ThemeToggle from "@/components/ThemeToggle";
@@ -56,7 +56,7 @@ const Navbar = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              {t(translations.hero.ctaEnroll)}
+              {t(translations.hero.ctaEnroll)} <ExternalLink size={14} className="ml-1" />
             </a>
           </Button>
           <Button variant="outline" asChild>
@@ -109,7 +109,7 @@ const Navbar = () => {
               rel="noopener noreferrer"
               onClick={() => setOpen(false)}
             >
-              {t(translations.hero.ctaEnroll)}
+              {t(translations.hero.ctaEnroll)} <ExternalLink size={14} className="ml-1" />
             </a>
           </Button>
           <Button variant="outline" className="w-full" asChild>

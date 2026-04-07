@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, ExternalLink } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { translations } from "@/i18n/translations";
 import heroPhoto from "@/assets/hero-photo.jpg";
@@ -39,7 +39,7 @@ const Hero = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                {t(h.ctaEnroll)}
+                {t(h.ctaEnroll)} <ExternalLink size={16} className="ml-1" />
               </a>
             </Button>
             <Button

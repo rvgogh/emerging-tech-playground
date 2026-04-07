@@ -1,3 +1,4 @@
+import { ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { translations } from "@/i18n/translations";
@@ -28,7 +29,7 @@ const DeadlineBanner = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            {t(translations.hero.ctaEnroll)}
+            {t(translations.hero.ctaEnroll)} <ExternalLink size={14} className="ml-1" />
           </a>
         </Button>
       </div>
