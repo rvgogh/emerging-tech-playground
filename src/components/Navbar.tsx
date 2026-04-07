@@ -56,7 +56,7 @@ const Navbar = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              {t(translations.hero.ctaEnroll)}
+              {t(translations.hero.ctaEnroll)} <ExternalLink size={14} className="ml-1" />
             </a>
           </Button>
           <Button variant="outline" asChild>
