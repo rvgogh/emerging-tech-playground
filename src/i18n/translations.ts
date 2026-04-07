@@ -257,8 +257,8 @@ export const translations = {
       {
         heading: { nl: "Waarvoor gebruiken wij je gegevens?", en: "How do we use your data?" },
         text: {
-          nl: "Je gegevens worden uitsluitend gebruikt om je vraag te beantwoorden en je te informeren over de minor Emerging Technologies Playground.",
-          en: "Your data is only used to answer your question and inform you about the Emerging Technologies Playground minor.",
+          nl: "Je gegevens worden uitsluitend gebruikt om je vraag te beantwoorden en je te informeren over de Avans minor Emerging Technologies Playground.",
+          en: "Your data is only used to answer your question and inform you about the Avans Emerging Technologies Playground minor.",
         },
       },
       {
