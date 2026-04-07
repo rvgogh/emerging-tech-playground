@@ -126,12 +126,12 @@ export const translations = {
       {
         label: { nl: "Locatie", en: "Location" },
         value: {
-          nl: "Op locatie, niet online",
-          en: "On-site, not online",
+          nl: "Regio 's-Hertogenbosch",
+          en: "'s-Hertogenbosch region",
         },
         sub: {
-          nl: "Je werkt op de projectlocatie: het innovatielab of bij de opdrachtgever",
-          en: "You work at the project location: the innovation lab or at the client",
+          nl: "Op locatie, niet online — je werkt in het innovatielab of bij de opdrachtgever",
+          en: "On-site, not online — you work at the innovation lab or at the client",
         },
       },
     ],
