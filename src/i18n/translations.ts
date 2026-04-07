@@ -355,7 +355,7 @@ export const translations = {
   contactPerson: {
     label: { nl: "Contactpersoon", en: "Contact Person" },
     name: "Roland van Gogh",
-    role: { nl: "Minorcoördinator", en: "Minor Coordinator" },
+    role: { nl: "Minorcoördinator · Avans Hogeschool 's-Hertogenbosch", en: "Minor Coordinator · Avans University of Applied Sciences 's-Hertogenbosch" },
     cta: { nl: "Chat via Teams", en: "Chat via Teams" },
   },
   featured: {
