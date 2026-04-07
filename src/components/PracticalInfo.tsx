@@ -85,6 +85,12 @@ const PracticalInfo = () => {
               <p className="text-muted-foreground text-sm leading-relaxed">
                 {t(p.locations.client.description)}
               </p>
+              <a
+                href="#projecten"
+                className="inline-flex items-center gap-1.5 text-primary text-sm font-medium mt-3 hover:underline"
+              >
+                {t(p.locations.client.linkLabel)}
+              </a>
             </div>
           </div>
         </div>
