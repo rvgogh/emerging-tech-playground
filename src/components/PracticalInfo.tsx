@@ -1,4 +1,4 @@
-import { GraduationCap, CalendarDays, Clock, UserCheck, Globe, MapPin, FlaskConical, Building2, Calendar } from "lucide-react";
+import { GraduationCap, CalendarDays, Clock, UserCheck, Globe, MapPin, FlaskConical, Building2, Calendar, ExternalLink } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { translations } from "@/i18n/translations";
 
