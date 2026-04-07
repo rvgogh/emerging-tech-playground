@@ -55,7 +55,7 @@ const Navbar = () => {
             </a>
           </Button>
           <Button variant="outline" asChild>
-            <a href="#contact">{t(translations.nav.cta)}</a>
+            <a href={resolveHref("#contact")}>{t(translations.nav.cta)}</a>
           </Button>
         </div>
 
