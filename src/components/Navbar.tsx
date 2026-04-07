@@ -79,7 +79,7 @@ const Navbar = () => {
           {navLinks.map((l) => (
               <a
                 key={l.href}
-                href={l.href}
+                href={resolveHref(l.href)}
                 onClick={() => setOpen(false)}
                 className="block py-2 text-sm font-medium text-foreground/70 hover:text-primary transition-colors"
               >
