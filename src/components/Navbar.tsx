@@ -37,7 +37,7 @@ const Navbar = () => {
           {navLinks.map((l) => (
               <a
                 key={l.href}
-                href={l.href}
+                href={resolveHref(l.href)}
                 className="text-sm font-medium text-foreground/70 hover:text-primary transition-colors"
               >
                 {l.label}
