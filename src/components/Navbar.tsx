@@ -14,18 +14,18 @@ const Navbar = () => {
 
   const navLinks = [
     { label: t(translations.nav.interests), href: "#disciplines" },
-    { label: t(translations.nav2.projects), href: "/projecten", isRoute: true },
     { label: t(translations.nav.why), href: "#waarom" },
     { label: t(translations.nav.practical), href: "#praktisch" },
     { label: t(translations.nav.experiences), href: "#ervaringen" },
+    { label: t(translations.nav2.projects), href: "#projecten" },
   ];
 
   return (
     <nav className="sticky top-0 z-50 bg-background/90 backdrop-blur-md border-b">
       <div className="container mx-auto flex items-center justify-between h-16 px-4 lg:px-8">
-        <a href="#" className="flex items-center gap-2">
+        <Link to="/" className="flex items-center gap-2">
           <img src={logo} alt="ETP Logo" className="h-10 w-auto dark:brightness-0 dark:invert" />
-        </a>
+        </Link>
 
         {/* Desktop links */}
         <div className="hidden md:flex items-center gap-8">
