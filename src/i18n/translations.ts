@@ -119,6 +119,17 @@ export const translations = {
           en: "Erasmus students welcome · Assessment for NL students in Dutch",
         },
       },
+      {
+        label: { nl: "Locatie", en: "Location" },
+        value: {
+          nl: "Op locatie, niet online",
+          en: "On-site, not online",
+        },
+        sub: {
+          nl: "Je werkt op de projectlocatie: het innovatielab of bij de opdrachtgever",
+          en: "You work at the project location: the innovation lab or at the client",
+        },
+      },
     ],
     locations: {
       heading: { nl: "Waar werk je?", en: "Where do you work?" },
