@@ -1,8 +1,8 @@
-import { GraduationCap, CalendarDays, Clock, UserCheck, Globe, FlaskConical, Building2, Calendar } from "lucide-react";
+import { GraduationCap, CalendarDays, Clock, UserCheck, Globe, MapPin, FlaskConical, Building2, Calendar } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { translations } from "@/i18n/translations";
 
-const icons = [GraduationCap, CalendarDays, Clock, UserCheck, Globe];
+const icons = [GraduationCap, CalendarDays, Clock, UserCheck, Globe, MapPin];
 
 const PracticalInfo = () => {
   const { t } = useLanguage();
