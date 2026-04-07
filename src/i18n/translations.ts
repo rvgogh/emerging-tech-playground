@@ -140,8 +140,8 @@ export const translations = {
       lab: {
         title: { nl: "Innovatielab", en: "Innovation Lab" },
         description: {
-          nl: "Onze hybride playground. Een inspirerende omgeving waar je zij aan zij werkt met andere teams en experimenteert met de nieuwste hardware en software.",
-          en: "Our hybrid playground. An inspiring environment where you work side by side with other teams and experiment with the latest hardware and software.",
+          nl: "Onze hybride playground in het Innovatiekwartier 's-Hertogenbosch. Een inspirerende omgeving waar je zij aan zij werkt met andere teams en experimenteert met de nieuwste hardware en software.",
+          en: "Our hybrid playground in the Innovation Quarter of 's-Hertogenbosch. An inspiring environment where you work side by side with other teams and experiment with the latest hardware and software.",
         },
         linkLabel: { nl: "Bekijk het Innovatielab", en: "Visit the Innovation Lab" },
       },
