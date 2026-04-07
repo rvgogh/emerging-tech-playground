@@ -10,7 +10,11 @@ import logo from "@/assets/ETP_logo_transparant.png";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-  const { t } = useLanguage();
+  const location = useLocation();
+  const isHome = location.pathname === "/";
+
+  const resolveHref = (href: string) =>
+    href.startsWith("#") && !isHome ? `/${href}` : href;
 
   const navLinks = [
     { label: t(translations.nav.interests), href: "#disciplines" },
