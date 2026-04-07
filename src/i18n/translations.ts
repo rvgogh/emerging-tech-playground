@@ -157,9 +157,9 @@ export const translations = {
     weekOverview: {
       heading: { nl: "Een week in de ETP", en: "A week at ETP" },
       weekdays: { nl: "Ma – Do", en: "Mon – Thu" },
-      weekdaysDesc: { nl: "Projectlocatie (Lab of Bedrijf)", en: "Project location (Lab or Client)" },
+      weekdaysDesc: { nl: "Projectlocatie (Lab of Bedrijf) · Kick-offs en expo's op de Avans-campus", en: "Project location (Lab or Client) · Kick-offs and expos at the Avans campus" },
       friday: { nl: "Vrijdag", en: "Friday" },
-      fridayDesc: { nl: "Wisselend: zelfstudie, expo of kick-off", en: "Alternating: self-study, expo or kick-off" },
+      fridayDesc: { nl: "Zelfstudie en individuele leerdoelen", en: "Self-study and individual learning goals" },
     },
   },
   testimonials: {
