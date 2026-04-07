@@ -39,7 +39,7 @@ const Hero = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                {t(h.ctaEnroll)}
+                {t(h.ctaEnroll)} <ExternalLink size={16} className="ml-1" />
               </a>
             </Button>
             <Button
