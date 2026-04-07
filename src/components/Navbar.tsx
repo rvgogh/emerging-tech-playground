@@ -97,7 +97,7 @@ const Navbar = () => {
             </a>
           </Button>
           <Button variant="outline" className="w-full" asChild>
-            <a href="#contact" onClick={() => setOpen(false)}>
+            <a href={resolveHref("#contact")} onClick={() => setOpen(false)}>
               {t(translations.nav.cta)}
             </a>
           </Button>
