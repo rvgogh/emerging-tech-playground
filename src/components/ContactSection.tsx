@@ -91,15 +91,16 @@ const ContactSection = () => {
               <div>
                 <p className="text-white font-bold">{cp.name}</p>
                 <p className="text-white/60 text-sm">{t(cp.role)}</p>
-                <a
-                  href={getTeamsLink()}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-primary text-sm font-medium mt-1 hover:underline"
-                >
-                  <MessageSquare size={14} />
-                  {t(cp.cta)}
-                </a>
+                <Button asChild size="sm" className="mt-2">
+                  <a
+                    href={getTeamsLink()}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <MessageSquare size={14} className="mr-1.5" />
+                    {t(cp.cta)}
+                  </a>
+                </Button>
               </div>
             </div>
           </div>
@@ -148,7 +149,7 @@ const ContactSection = () => {
                   )}
                 />
 
-                <Button type="submit" size="lg" className="w-full font-semibold">
+                <Button type="submit" variant="secondary" size="lg" className="w-full font-semibold">
                   {t(c.submit)}
                 </Button>
               </form>
