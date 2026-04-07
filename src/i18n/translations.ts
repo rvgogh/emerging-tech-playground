@@ -143,6 +143,7 @@ export const translations = {
           nl: "Onze hybride playground. Een inspirerende omgeving waar je zij aan zij werkt met andere teams en experimenteert met de nieuwste hardware en software.",
           en: "Our hybrid playground. An inspiring environment where you work side by side with other teams and experiment with the latest hardware and software.",
         },
+        linkLabel: { nl: "Bekijk het Innovatielab", en: "Visit the Innovation Lab" },
       },
       client: {
         title: { nl: "Bij de Opdrachtgever", en: "At the Client" },
