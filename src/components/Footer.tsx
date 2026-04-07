@@ -17,10 +17,10 @@ const Footer = () => {
 
   const footerLinks = [
     { label: t(nav.interests), href: "#disciplines" },
-    { label: t(translations.nav2.projects), href: "/projecten", isRoute: true },
     { label: t(nav.why), href: "#waarom" },
     { label: t(nav.practical), href: "#praktisch" },
     { label: t(nav.experiences), href: "#ervaringen" },
+    { label: t(translations.nav2.projects), href: "#projecten" },
     { label: t(nav.contact), href: "#contact" },
   ];
 
@@ -36,25 +36,15 @@ const Footer = () => {
           </div>
 
           <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">
-            {footerLinks.map((l) =>
-              (l as any).isRoute ? (
-                <Link
-                  key={l.href}
-                  to={l.href}
-                  className="hover:text-white transition-colors"
-                >
-                  {l.label}
-                </Link>
-              ) : (
-                <a
-                  key={l.href}
-                  href={l.href}
-                  className="hover:text-white transition-colors"
-                >
-                  {l.label}
-                </a>
-              )
-            )}
+            {footerLinks.map((l) => (
+              <a
+                key={l.href}
+                href={l.href}
+                className="hover:text-white transition-colors"
+              >
+                {l.label}
+              </a>
+            ))}
           </div>
 
           <div className="flex gap-4">
