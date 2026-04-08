@@ -42,7 +42,9 @@ const FeaturedProjects = () => {
               className="border-0 shadow-lg hover:shadow-xl transition-all group"
             >
               <CardContent className="p-0">
-                {project.video ? (
+                {project.images && project.images.length > 0 ? (
+                  <ProjectImageCarousel images={project.images} alt={project.title} />
+                ) : project.video ? (
                   <video
                     src={project.video}
                     autoPlay
@@ -51,8 +53,6 @@ const FeaturedProjects = () => {
                     playsInline
                     className="w-full h-56 object-cover rounded-t-lg"
                   />
-                ) : project.images && project.images.length > 0 ? (
-                  <ProjectImageCarousel images={project.images} alt={project.title} />
                 ) : project.image ? (
                   <img
                     src={project.image}
