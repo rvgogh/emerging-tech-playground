@@ -150,7 +150,7 @@ const ProjectImageCarousel = ({ images, alt, renderMode = "full", isOpen = false
 export const PhotoButton = ({ onClick }: { onClick: () => void }) => (
   <button
     onClick={(e) => { e.stopPropagation(); onClick(); }}
-    className="absolute bottom-3 right-3 bg-black/50 hover:bg-black/70 text-white rounded-full p-1.5 opacity-0 group-hover/carousel:opacity-100 transition-opacity flex items-center gap-1 text-xs font-medium px-2.5"
+    className="absolute bottom-3 right-3 bg-black/50 hover:bg-black/70 text-white rounded-full p-1.5 flex items-center gap-1 text-xs font-medium px-2.5 transition-colors"
     aria-label="View photos"
   >
     <Images size={14} />
