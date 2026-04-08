@@ -92,6 +92,7 @@ export const projects: Project[] = [
     client: "Regina Coeli",
     clientUrl: "https://www.reginacoeli.nl/",
     video: "/videos/regina-coeli.mp4",
+    images: ["/images/regina-coeli-1.jpeg", "/images/regina-coeli-2.jpeg", "/images/regina-coeli-3.jpeg", "/images/regina-coeli-4.jpeg", "/images/regina-coeli-5.jpeg", "/images/regina-coeli-6.jpg"],
     year: 2025,
     semester: { nl: "najaar", en: "fall" },
     fields: ["Design", "Business"],
