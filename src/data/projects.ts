@@ -9,6 +9,7 @@ export interface Project {
   fields: string[];
   video?: string;
   image?: string;
+  images?: string[];
   context: T;
   problem: T;
   goals: T;
