@@ -57,6 +57,7 @@ export const projects: Project[] = [
     client: "Openbaring ruimte (Matthijs Bosman)",
     clientUrl: "https://www.openbaringruimte.nl/",
     image: "/images/street-cred.png",
+    images: ["/images/street-cred.png", "/images/streetcred-1.jpg", "/images/streetcred-2.jpg", "/images/streetcred-3.jpg", "/images/streetcred-4.jpg", "/images/streetcred-5.jpg"],
     year: 2025,
     semester: { nl: "najaar", en: "fall" },
     fields: ["Design", "ICT", "Engineering"],
