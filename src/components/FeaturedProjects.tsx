@@ -22,6 +22,7 @@ const FeaturedProjects = () => {
   const { t } = useLanguage();
   const f = translations.featured;
   const pt = translations.projects;
+  const [photoOpen, setPhotoOpen] = useState<string | null>(null);
 
   return (
     <section id="projecten" className="py-16 lg:py-20 bg-secondary">
