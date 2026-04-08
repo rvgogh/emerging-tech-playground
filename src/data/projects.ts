@@ -9,6 +9,7 @@ export interface Project {
   fields: string[];
   video?: string;
   image?: string;
+  images?: string[];
   context: T;
   problem: T;
   goals: T;
@@ -221,6 +222,7 @@ export const projects: Project[] = [
     client: "Innovatielab",
     clientUrl: "https://www.ik-db.nl/",
     image: "/images/sensorlab.jpg",
+    images: ["/images/sensorlab.jpg", "/images/sensorlab-1.jpg", "/images/sensorlab-2.jpg", "/images/sensorlab-3.jpg", "/images/sensorlab-4.jpg", "/images/sensorlab-5.jpg"],
     year: 2025,
     semester: { nl: "najaar", en: "fall" },
     fields: ["Design", "ICT", "Engineering", "Business"],

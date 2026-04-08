@@ -1,6 +1,7 @@
 import { useState, useMemo } from "react";
 import { useSearchParams, Link } from "react-router-dom";
 import { ArrowLeft, Building2, Calendar, Filter } from "lucide-react";
+import ProjectImageCarousel from "@/components/ProjectImageCarousel";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -103,6 +104,8 @@ const Projects = () => {
                       playsInline
                       className="w-full h-56 object-cover rounded-t-lg"
                     />
+                  ) : project.images && project.images.length > 0 ? (
+                    <ProjectImageCarousel images={project.images} alt={project.title} />
                   ) : project.image ? (
                     <img
                       src={project.image}
