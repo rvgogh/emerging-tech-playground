@@ -51,6 +51,8 @@ const FeaturedProjects = () => {
                     playsInline
                     className="w-full h-56 object-cover rounded-t-lg"
                   />
+                ) : project.images && project.images.length > 0 ? (
+                  <ProjectImageCarousel images={project.images} alt={project.title} />
                 ) : project.image ? (
                   <img
                     src={project.image}
