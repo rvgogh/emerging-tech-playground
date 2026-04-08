@@ -24,6 +24,7 @@ export const projects: Project[] = [
     client: "Van Beek",
     clientUrl: "https://www.van-beek.nl/",
     image: "/images/van-beek.jpg",
+    images: ["/images/van-beek.jpg", "/images/vanbeek-1.jpg", "/images/vanbeek-2.jpg", "/images/vanbeek-3.jpg", "/images/vanbeek-4.jpg"],
     year: 2025,
     semester: { nl: "najaar", en: "fall" },
     fields: ["Engineering", "ICT", "Business"],
