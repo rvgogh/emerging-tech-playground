@@ -189,6 +189,7 @@ export const projects: Project[] = [
     client: "TE Connectivity",
     clientUrl: "https://www.te.com/",
     image: "/images/te-connectivity.jpg",
+    images: ["/images/te-connectivity.jpg", "/images/bess-1.jpg", "/images/bess-2.jpg", "/images/bess-3.jpg"],
     year: 2025,
     semester: { nl: "najaar", en: "fall" },
     fields: ["Engineering", "Business"],
