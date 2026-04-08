@@ -26,6 +26,7 @@ const Projects = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const initialFilter = searchParams.get("field") || "";
   const [activeFilter, setActiveFilter] = useState(initialFilter);
+  const [photoOpen, setPhotoOpen] = useState<string | null>(null);
 
   const filtered = useMemo(() => {
     if (!activeFilter) return projects;
