@@ -1,6 +1,7 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, Building2, Calendar } from "lucide-react";
-import ProjectImageCarousel from "@/components/ProjectImageCarousel";
+import ProjectImageCarousel, { PhotoButton } from "@/components/ProjectImageCarousel";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -21,6 +22,7 @@ const FeaturedProjects = () => {
   const { t } = useLanguage();
   const f = translations.featured;
   const pt = translations.projects;
+  const [photoOpen, setPhotoOpen] = useState<string | null>(null);
 
   return (
     <section id="projecten" className="py-16 lg:py-20 bg-secondary">
@@ -42,17 +44,31 @@ const FeaturedProjects = () => {
               className="border-0 shadow-lg hover:shadow-xl transition-all group"
             >
               <CardContent className="p-0">
-                {project.images && project.images.length > 0 ? (
+                {project.video ? (
+                  <div className="relative group/carousel">
+                    <video
+                      src={project.video}
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="w-full h-56 object-cover rounded-t-lg"
+                    />
+                    {project.images && project.images.length > 0 && (
+                      <>
+                        <PhotoButton onClick={() => setPhotoOpen(project.title)} />
+                        <ProjectImageCarousel
+                          images={project.images}
+                          alt={project.title}
+                          renderMode="lightbox-only"
+                          isOpen={photoOpen === project.title}
+                          onClose={() => setPhotoOpen(null)}
+                        />
+                      </>
+                    )}
+                  </div>
+                ) : project.images && project.images.length > 0 ? (
                   <ProjectImageCarousel images={project.images} alt={project.title} />
-                ) : project.video ? (
-                  <video
-                    src={project.video}
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    className="w-full h-56 object-cover rounded-t-lg"
-                  />
                 ) : project.image ? (
                   <img
                     src={project.image}
