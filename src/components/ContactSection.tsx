@@ -51,7 +51,6 @@ const ContactSection = () => {
   });
 
   const onSubmit = async (data: ContactForm) => {
-    console.log("Contact form submitted:", data);
     toast({
       title: t(c.successTitle),
       description: t(c.successDescription),
