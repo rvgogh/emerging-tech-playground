@@ -20,7 +20,7 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: "Sensorlab 4.0 - Atmos",
+    title: "Sensorlab 3.0 - Atmos",
     client: "Innovatielab",
     clientUrl: "https://www.ik-db.nl/",
     image: "/images/atmos-6.jpg",
