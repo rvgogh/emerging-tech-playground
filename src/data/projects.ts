@@ -20,6 +20,47 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: "Sensorlab 4.0 - Atmos",
+    client: "Innovatielab",
+    clientUrl: "https://www.ik-db.nl/",
+    image: "/images/atmos-6.jpg",
+    images: [
+      "/images/atmos-6.jpg",
+      "/images/atmos-1.jpg",
+      "/images/atmos-2.jpg",
+      "/images/atmos-3.jpg",
+      "/images/atmos-4.jpg",
+      "/images/atmos-5.jpg",
+    ],
+    year: 2026,
+    semester: { nl: "voorjaar", en: "spring" },
+    fields: ["Design", "ICT", "Business"],
+    context: {
+      nl: "Atmos is ontwikkeld binnen het Innovatie Kwartier Den Bosch, een gedeelde werkplek waar studenten, onderzoekers, stagiairs, professionals en bezoekers samenwerken. Het Innovatie Kwartier verzamelt al omgevingsdata via sensoren, waaronder temperatuur, geluid, luchtkwaliteit, bezetting en energieverbruik. Deze data wordt echter nog niet op een betekenisvolle manier gepresenteerd aan de gebruikers van de ruimte.",
+      en: "Atmos is developed within the Innovation Quarter Den Bosch, a shared workspace where students, researchers, interns, professionals, and visitors work together. The Innovation Quarter already collects environmental data through sensors, including temperature, noise, air quality, occupancy, and energy consumption. This data, however, is not yet presented in a way that is meaningful or useful for the people using the space.",
+    },
+    problem: {
+      nl: "De verzamelde sensordata blijft grotendeels onzichtbaar en moeilijk te begrijpen voor gebruikers. Hierdoor ontstaat een kloof tussen de sensorinfrastructuur en de dagelijkse ervaring van studenten, onderzoekers, professionals en bezoekers. Gebruikers missen inzicht in hun werkomstandigheden en de invloed daarvan op comfort, focus, samenwerking en productiviteit.",
+      en: "The collected sensor data remains largely invisible and difficult for users to understand. This creates a disconnect between the sensor infrastructure and the daily experience of students, researchers, professionals, and visitors. Users lack clear insights into their workspace conditions and how these conditions affect comfort, focus, collaboration, and productivity.",
+    },
+    goals: {
+      nl: "Een zelfstandig, interactief product ontwikkelen dat realtime omgevings- en gebruikersdata vertaalt naar duidelijke, betekenisvolle feedback. Het systeem helpt gebruikers hun werkomgeving beter te begrijpen en hun gedrag, werkplekgebruik en meldingen aan te passen om focus, samenwerking en productiviteit te verbeteren.",
+      en: "Develop a standalone, interactive product that translates real-time environmental and user-generated data into clear, meaningful feedback. The system helps users better understand environmental conditions such as noise, occupancy, temperature, and comfort, allowing them to adapt their behaviour, workspace usage, and reporting to improve focus, collaboration, and productivity.",
+    },
+    results: {
+      nl: "Een volledig functionele interactieve applicatie die realtime omgevingsdata toegankelijk visualiseert voor gebruikers van het Innovatie Kwartier. Aanvullend zijn er speciale monitoren in de ruimtes geplaatst die continu de omgevingscondities tonen; deze bleken effectief in het trekken van aandacht en het stimuleren van gesprekken. Daarnaast is de basis gelegd voor een toekomstige Digital Twin met 3D-scans van de ruimtes.",
+      en: "A fully functional interactive application that translates real-time environmental data into accessible visual feedback for users of the Innovation Quarter. In addition, dedicated monitors placed in the rooms continuously visualize the conditions and proved effective at attracting attention and sparking conversations. The project also laid the groundwork for a future Digital Twin, including initial 3D scans of the rooms.",
+    },
+    conclusion: {
+      nl: "Het project vertaalt complexe sensordata naar betekenisvolle feedback en vergroot het bewustzijn van werkplekomstandigheden. Testen en feedback van stakeholders toonden aan dat gebruikers de informatie goed begrijpen en zich betrokken voelen bij de installatie, met een solide technische basis voor doorontwikkeling.",
+      en: "The project translates complex sensor data into meaningful feedback and increases awareness of workplace conditions. Testing and stakeholder feedback showed that users understood the information and engaged with the installation, providing a solid technical foundation for future expansion.",
+    },
+    recommendation: {
+      nl: "Uitbreiden met geavanceerdere datavisualisaties, gepersonaliseerde interacties en historische trends. Adminbeheer verder verbeteren, documentatie en toegangsgegevens actueel houden en regelmatig gebruikerstests uitvoeren bij nieuwe functionaliteit.",
+      en: "Expand with more advanced data visualizations, personalized interactions, and historical trend data. Further improve admin management, keep documentation and access credentials up to date, and run regular user testing whenever new functionality is added.",
+    },
+  },
+  {
     title: "Healthy Workplace Monitoring System",
     client: "Van Beek",
     clientUrl: "https://www.van-beek.nl/",
