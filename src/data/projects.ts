@@ -20,6 +20,45 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: "Digital Lifeform - Blobbie",
+    client: "Innovatielab",
+    clientUrl: "https://www.ik-db.nl/",
+    image: "/images/blobbie-1.jpg",
+    images: [
+      "/images/blobbie-1.jpg",
+      "/images/blobbie-2.jpg",
+      "/images/blobbie-3.jpg",
+      "/images/blobbie-4.jpg",
+    ],
+    year: 2026,
+    semester: { nl: "voorjaar", en: "spring" },
+    fields: ["Design", "ICT", "Engineering", "Business"],
+    context: {
+      nl: "Het Innovatie Kwartier Den Bosch is een plek waar experiment, creativiteit en emerging technologies samenkomen. Eerdere studententeams legden de basis voor een schermgebaseerde installatie in de lobby, maar het potentieel bleef onbenut. Bezoekers liepen voorbij zonder een betekenisvolle interactie. Blobbie is een responsieve digitale entiteit, gepresenteerd als een zachte, veranderende blob die reageert op menselijke aanwezigheid door zijn grootte, beweging, gloed en kleur aan te passen.",
+      en: "The InnovationLab in Den Bosch is a space where experimentation, creativity, and emerging technologies come together. Earlier student teams laid the groundwork for a screen-based installation in the lobby, but its potential had not yet been realised. Blobbie is a responsive digital entity, shown as a soft shifting blob that reacts to human presence by changing its size, movement, glow, and colour, turning a passing moment into a visual experience.",
+    },
+    problem: {
+      nl: "Creëer een lichtobject voor de lobby van het InnovationLab dat het gevoel van innovatie overbrengt — iets dat een bezoeker in één oogopslag voelt.",
+      en: "Create a light object for the InnovationLab lobby that carries the feeling of innovation — one a visitor feels in a single glance.",
+    },
+    goals: {
+      nl: "Een permanente, interactieve digitale levensvorm creëren die zich uitdrukt via het monitor, bezoekers betrekt en een betekenisvolle, autonome aanwezigheid wordt in het Innovation Lab.",
+      en: "Create a permanent, interactive digital lifeform that expresses itself through the monitor, engages visitors, and becomes a meaningful, autonomous presence in the Innovation Lab.",
+    },
+    results: {
+      nl: "Een werkende, autonome installatie op de Jetson Orin Nano, volledig offline. Realtime persoonsdetectie stuurt een custom pygame metaball renderer op ~30 fps. Blobbie werkt op twee tijdschalen: een centrale 'hero' orb die de bezoeker volgt en opgewonden reageert, en een collectieve zwerm die groeit met elke bezoeker van de dag. Uit vier experimenten bleek dat bezoekers zich consistent 'gezien' voelden en de entiteit als levend ervoeren.",
+      en: "A working, autonomous installation running on the Jetson Orin Nano, fully offline. Real-time person detection drives a custom pygame metaball renderer at roughly 30 fps. Blobbie works on two timescales: a central hero orb that tracks the visitor and reacts with excitement, and a collective swarm that grows with every visitor of the day. Across four experiments, visitors consistently felt noticed and perceived the entity as alive.",
+    },
+    conclusion: {
+      nl: "Het project toont aan dat een permanente, volledig lokale aanwezigheid op één lobbyscherm technisch haalbaar is en door bezoekers wordt gelezen als levend en attent in plaats van als bewaking. Gedragsontwerp draagt het: wegkijken, ronddwalen als niemand er is, een beetje bewuste imperfectie.",
+      en: "The project shows that a permanent, fully local presence on a single lobby screen is both technically feasible and read by visitors as alive and attentive rather than as surveillance. What carries it is behavioural design: looking away, wandering when alone, a little deliberate imperfection.",
+    },
+    recommendation: {
+      nl: "Interactie uitbreiden voorbij tracking, zoals reageren op gebaren en zwaaien en optioneel geluid, om betrokkenheid vast te houden. Rijkere generatieve output, stemgestuurde compositie en een thermische printer als aandenken zijn interessant voor een volgende versie.",
+      en: "Add interaction beyond tracking, such as wave and gesture response and optional sound, to sustain engagement. Treat richer generative output, voice-triggered composition, and a thermal-printer keepsake as version two.",
+    },
+  },
+  {
     title: "Sensorlab 3.0 - Atmos",
     client: "Innovatielab",
     clientUrl: "https://www.ik-db.nl/",
